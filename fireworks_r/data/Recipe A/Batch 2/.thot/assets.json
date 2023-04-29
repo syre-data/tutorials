@@ -1,0 +1,21 @@
+{
+  "f6aff6d9-f26b-4390-adcb-585eddcac5d7": {
+    "rid": "f6aff6d9-f26b-4390-adcb-585eddcac5d7",
+    "properties": {
+      "created": "2023-04-29T20:39:42.070086Z",
+      "creator": {
+        "User": {
+          "Id": "900c526d-be2d-4ec8-aed7-3fb050511c56"
+        }
+      },
+      "name": null,
+      "kind": "noise-data",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "a2-data.csv"
+    }
+  }
+}

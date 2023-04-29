@@ -1,0 +1,22 @@
+{
+  "rid": "7d6203fe-f01c-479a-95fa-7778761a7019",
+  "properties": {
+    "created": "2023-04-28T12:19:56.928229Z",
+    "creator": {
+      "User": {
+        "Id": "900c526d-be2d-4ec8-aed7-3fb050511c56"
+      }
+    },
+    "name": "Fireworks",
+    "kind": null,
+    "description": null,
+    "tags": [],
+    "metadata": {}
+  },
+  "scripts": {
+    "7a93507b-d80b-4e3d-bc98-84dd77d9c768": {
+      "autorun": true,
+      "priority": 0
+    }
+  }
+}

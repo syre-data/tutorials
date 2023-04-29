@@ -1,0 +1,21 @@
+{
+  "540cd158-4a55-40a1-a5ab-987ecb83e77d": {
+    "rid": "540cd158-4a55-40a1-a5ab-987ecb83e77d",
+    "properties": {
+      "created": "2023-04-28T12:49:03.282974Z",
+      "creator": {
+        "User": {
+          "Id": "900c526d-be2d-4ec8-aed7-3fb050511c56"
+        }
+      },
+      "name": null,
+      "kind": "noise-data",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "b2-data.csv"
+    }
+  }
+}

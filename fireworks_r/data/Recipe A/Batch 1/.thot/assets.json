@@ -1,0 +1,21 @@
+{
+  "7000cfec-b89d-47dd-86d2-d9c9c99af6a5": {
+    "rid": "7000cfec-b89d-47dd-86d2-d9c9c99af6a5",
+    "properties": {
+      "created": "2023-04-28T12:45:57.098351Z",
+      "creator": {
+        "User": {
+          "Id": "900c526d-be2d-4ec8-aed7-3fb050511c56"
+        }
+      },
+      "name": null,
+      "kind": "noise-data",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "a1-data.csv"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "03560a69-7c7d-4971-8812-8ca77d53bcc0": {
+    "rid": "03560a69-7c7d-4971-8812-8ca77d53bcc0",
+    "properties": {
+      "created": "2023-04-29T20:39:46.823340Z",
+      "creator": {
+        "User": {
+          "Id": "900c526d-be2d-4ec8-aed7-3fb050511c56"
+        }
+      },
+      "name": null,
+      "kind": "noise-data",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "b1-data.csv"
+    }
+  }
+}
