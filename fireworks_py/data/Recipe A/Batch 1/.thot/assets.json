@@ -1,0 +1,21 @@
+{
+  "43806111-b794-4038-9965-7a5ea82ca9e5": {
+    "rid": "43806111-b794-4038-9965-7a5ea82ca9e5",
+    "properties": {
+      "created": "2023-04-28T12:27:05.063335Z",
+      "creator": {
+        "User": {
+          "Id": "900c526d-be2d-4ec8-aed7-3fb050511c56"
+        }
+      },
+      "name": null,
+      "kind": "noise-data",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "a1-data.csv"
+    }
+  }
+}
