@@ -1,0 +1,22 @@
+{
+  "rid": "d196e1d9-46fb-49fb-823f-86925ea51865",
+  "properties": {
+    "created": "2023-05-15T15:57:26.532797Z",
+    "creator": {
+      "User": {
+        "Id": "47c57f8a-d9bd-480d-8624-4e61aae4f386"
+      }
+    },
+    "name": "Python",
+    "kind": null,
+    "description": null,
+    "tags": [],
+    "metadata": {}
+  },
+  "scripts": {
+    "b5e497c3-74f2-47da-8426-04c72fd510b2": {
+      "autorun": true,
+      "priority": 0
+    }
+  }
+}

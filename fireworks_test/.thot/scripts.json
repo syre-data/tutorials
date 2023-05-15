@@ -1,0 +1,34 @@
+[
+  {
+    "rid": "b5e497c3-74f2-47da-8426-04c72fd510b2",
+    "path": {
+      "Relative": "noise_stats.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "47c57f8a-d9bd-480d-8624-4e61aae4f386",
+    "created": "2023-05-15T15:57:51.850382Z"
+  },
+  {
+    "rid": "e6e49b24-30d6-4eec-8c62-61d25b050c25",
+    "path": {
+      "Relative": "noise_stats.r"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "R",
+      "cmd": "Rscript",
+      "args": [],
+      "env": {}
+    },
+    "creator": "47c57f8a-d9bd-480d-8624-4e61aae4f386",
+    "created": "2023-05-15T15:58:01.015828Z"
+  }
+]

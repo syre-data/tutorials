@@ -1,0 +1,21 @@
+{
+  "3b2b87cd-6e8a-44ef-ad60-0d028760655d": {
+    "rid": "3b2b87cd-6e8a-44ef-ad60-0d028760655d",
+    "properties": {
+      "created": "2023-05-15T15:58:56.128535Z",
+      "creator": {
+        "User": {
+          "Id": "47c57f8a-d9bd-480d-8624-4e61aae4f386"
+        }
+      },
+      "name": null,
+      "kind": "noise-data",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "a1-data.csv"
+    }
+  }
+}
