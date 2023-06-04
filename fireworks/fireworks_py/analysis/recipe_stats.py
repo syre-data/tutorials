@@ -9,7 +9,7 @@ db = thot.Database()
 recipe = db.root
 
 # get noise statistics data
-noise_stats = db.find_assets({'type': 'noise-stats'})
+noise_stats = db.find_assets(type='noise-stats')
 
 # create combined dataframe 
 df = []
@@ -39,5 +39,5 @@ stat_properties = {
 	'file': 'recipe-stats.pkl'
 }
 
-stats_path = db.add_asset(stat_properties)
+stats_path = db.add_asset(**stat_properties)
 stats.to_pickle(stats_path)
