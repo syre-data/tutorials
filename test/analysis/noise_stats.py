@@ -5,6 +5,12 @@ import thot
 # initialize thot project
 db = thot.Database()
 
+# Test metadata inheritance
+assert db.root.metadata['test'] == 'test'
+
+# Test metadata 
+assert db.root.metadata['env'] == 'python'
+
 # get noise data from asset
 noise_data = db.find_asset(type='noise-data')
 

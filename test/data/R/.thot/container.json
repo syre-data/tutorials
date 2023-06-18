@@ -11,7 +11,9 @@
     "kind": null,
     "description": null,
     "tags": [],
-    "metadata": {}
+    "metadata": {
+      "env": "rscript"
+    }
   },
   "scripts": {
     "e6e49b24-30d6-4eec-8c62-61d25b050c25": {

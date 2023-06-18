@@ -1,4 +1,10 @@
 {
   "local_format_version": "0.10.0",
-  "permissions": {}
+  "permissions": {
+    "e6cdf6ff-ab81-4599-be66-000f52bd7517": {
+      "read": true,
+      "write": true,
+      "execute": true
+    }
+  }
 }

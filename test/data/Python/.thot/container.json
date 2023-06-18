@@ -11,7 +11,9 @@
     "kind": null,
     "description": null,
     "tags": [],
-    "metadata": {}
+    "metadata": {
+      "env": "python"
+    }
   },
   "scripts": {
     "b5e497c3-74f2-47da-8426-04c72fd510b2": {
