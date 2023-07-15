@@ -1,7 +1,12 @@
-# Beginner tutorial - Fireworks
+# Beginner tutorial | Puzzle's Fireworks
 > :clock9: **15 minutes**
 
+## Puzzle's Fireworks
+Congratulations! You've just been hired as the head of the R+D department at Puzzles Underwater Fireworks company. The city's aquarium just hired us for their annual New Year's Eve extravaganza, and they want to do something extra special this year: fireworks for the fish. Luckily, our team has been working hard for the past six months on two new recipes for silent explosions. A perfect solution so the fish don't get scared. Looks like your first project will be to compare the two recipes to see which is quieter. 
+
 Our deadline is approaching quickly, so we need to put a rush on this project. Luckily, our engineers have already collected the data and written the analysis scripts. It's up to you to run the analysis and get back to us with the results ASAP!
+
+Good luck!
 
 ## Organizing Your Project
 The first thing we need to do is organize our project. Thot uses a tree structure to organize your projects, giving your project different levels. The top level should be the most important grouping to you, becoming less important as you move down the tree. 
@@ -43,6 +48,8 @@ Navigate to the ``data`` folder of the project folder you downloaded and click *
 
 This will open a **Container Properties** dialog where we can set the properties of our root Container. Enter the following information (leaving the rest blank), then click the :badge:`Submit, badge-success` button.
 
+|     |     |
+| --- | --- |
 | **Name:** | Silent Fireworks |
 | **Type:**	| project
 | **Description:** | Determining whether recipe A or B is quieter. |
@@ -73,6 +80,7 @@ In this tutorial we will only use the Project view. Let's make the project tree 
 
 From the **Project** view, click the plus icon :fa:`plus-circle, style=fas` of the ``Silent Fireworks`` Container. This opens the **Container Properties** dialog for the child to be added.
 
+|     |     |
 | --- | --- |
 | **Name:** | Recipe A |
 | **Type:** | recipe |
@@ -87,6 +95,7 @@ To add metadata click on the **Add Metadata** button and enter the following met
 
 On to the batches. Create a child Container of ``Recipe A`` with the following information:
 
+|     |     |
 | --- | --- |
 | **Name:** | Batch 1 |
 | **Type:** | batch |
@@ -103,6 +112,8 @@ The notation for the metadata is of the form ``Name (Type): Value``.
 
 Repeat this for Batch 2.
 
+|     |     |
+| --- | --- |
 | **Name:** | Batch 2 |
 | **Type:**	| batch |
 | **Metadata:** | batch (number): 2 |

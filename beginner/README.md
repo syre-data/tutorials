@@ -14,7 +14,7 @@ This is your place to get started using Thot. In these tutorials you'll learn th
     - Build a project
     - Organize your data
     - Annotate data with metadata
-    - Associate analysis scripts to Cotnainers
+    - Associate analysis scripts to Containers
     - Analyze a project
 
 

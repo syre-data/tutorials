@@ -1,8 +1,9 @@
 # Thot tutorials
 
 Welcome to the Thot's tutorials!
+
 These projects are designed to help you learn and explore the features of Thot.
-Each tutorial only takes **15 minutes**, so you can get up and running quickly, and learn in bite sized chunks.
+**Each tutorial only takes 15 minutes**, so you can get up and running quickly, and learn in bite sized chunks.
 
 The tutorials are divided by level, and each level has several projects to choose from.
 + **Beginner:** Learn the basics of the Thot desktop app by building and analyzing your first project.
