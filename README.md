@@ -1,13 +1,22 @@
-# Thot Demo Projects
+# Thot tutorials
 
-Welcome to the Thot Demo Projects repository! This repository contains demo projects related to the video tutorial series available on the Thot website. 
+Welcome to the Thot's tutorials!
 These projects are designed to help you learn and explore the features of Thot.
 
-Getting Started
+The tutorials are divided by level, and each level has several projects to choose from.
++ **Beinnger:**
 
-1. Clone this repository to your local machine.
-2. Follow the video tutorials available on the Thot website to get started with each project.
+# Install
+## Desktop app
+Your first step in getting started is to install the Thot desktop app.
+If you haven't received the install package please sign up for our beta testing list on the [Thot website](https://thot.so#join).
+Installing the app should be the same as installing any other application for your OS. You can view OS-specific instructional video on [our YouTube channel]().
++ [Windows]()
++ [Mac]()
++ [Linux]()
 
-Happy coding!
+## Language bindings
+Next, you'll need to install the language bindings for your analysis scripts.
 
-For more information, please visit the Thot [website](https://thot.so)
+# Questions
+Please feel free to reach out to us on our Discord, or send us an email at [info@thot.so].
