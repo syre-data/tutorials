@@ -1,12 +1,7 @@
 # Beginner tutorial - Fireworks
-> :fa:`clock` **15 minutes**
+> :clock9: **15 minutes**
 
 Our deadline is approaching quickly, so we need to put a rush on this project. Luckily, our engineers have already collected the data and written the analysis scripts. It's up to you to run the analysis and get back to us with the results ASAP!
-
-.. only:: builder_html or readthedocs
-
-	:download:`Click here to download the project resource. </_static/examples/fireworks/raw/fireworks.zip>`
-
 
 ## Organizing Your Project
 The first thing we need to do is organize our project. Thot uses a tree structure to organize your projects, giving your project different levels. The top level should be the most important grouping to you, becoming less important as you move down the tree. 
@@ -48,11 +43,9 @@ Navigate to the ``data`` folder of the project folder you downloaded and click *
 
 This will open a **Container Properties** dialog where we can set the properties of our root Container. Enter the following information (leaving the rest blank), then click the :badge:`Submit, badge-success` button.
 
-================	=============================================
-**Name:**			Silent Fireworks
-**Type:**			project
-**Description:** 	Determining whether recipe A or B is quieter.
-================	=============================================
+| **Name:** | Silent Fireworks |
+| **Type:**	| project
+| **Description:** | Determining whether recipe A or B is quieter. |
 
 
 .. figure:: /_static/get_started/local/container_properties_dialog.png
@@ -80,28 +73,24 @@ In this tutorial we will only use the Project view. Let's make the project tree 
 
 From the **Project** view, click the plus icon :fa:`plus-circle, style=fas` of the ``Silent Fireworks`` Container. This opens the **Container Properties** dialog for the child to be added.
 
-=========	========
-**Name:** 	Recipe A
-**Type:** 	recipe
-=========	========
+| --- | --- |
+| **Name:** | Recipe A |
+| **Type:** | recipe |
 
 We'll also add metadata to this Container. This allows us to attach metadata to our data. Child Containers inherit the metadata from their ancestors, but can overwrite it by declaring a new value with the same name.
 
 To add metadata click on the **Add Metadata** button and enter the following metadata.
 
-====== 	====== 	=====
-Name 	Type 	Value
-====== 	====== 	=====
-recipe 	string 	a
-====== 	====== 	=====
+| Name | Type | Value
+| --- | 	--- | ---
+| recipe | string | a
 
 On to the batches. Create a child Container of ``Recipe A`` with the following information:
 
-=============	=================
-**Name:** 		Batch 1
-**Type:**		batch
-**Metadata:**	batch (number): 1
-=============	=================
+| --- | --- |
+| **Name:** | Batch 1 |
+| **Type:** | batch |
+| **Metadata:**	| batch (number): 1 |
 
 The notation for the metadata is of the form ``Name (Type): Value``.
 
@@ -114,11 +103,9 @@ The notation for the metadata is of the form ``Name (Type): Value``.
 
 Repeat this for Batch 2.
 
-=============	=================
-**Name:** 		Batch 2
-**Type:**		batch
-**Metadata:**	batch (number): 2
-=============	=================
+| **Name:** | Batch 2 |
+| **Type:**	| batch |
+| **Metadata:** | batch (number): 2 |
 
 Great! We've now created our ``Recipe A`` branch.
 
@@ -220,6 +207,4 @@ We're almost there now! Let's change our preview back to ``Assets`` and click th
 
 Once the analysis is complete you'll seet he newly created Assets appear in the project tree. Which recipe is quieter? Open the ``Recipe Comparison`` Assets in the ``Silent Fireworks`` Container to find out. (No, you're not seeing double, there are two of them. One is a CSV file and the other is a plot.) To preview an Asset, or a Script for that matter, :kbd:`Alt + click` on it.
 
-.. only:: builder_html or readthedocs
-
-	:download:`Click here to download the final project. </_static/examples/fireworks/project_steps/03-moving_up/project/project.zip>`
+> [Download the final project]()
