@@ -1,17 +1,19 @@
 # Thot tutorials
 
-Welcome to the Thot's tutorials!
+Welcome to Thot's tutorials!
 
 These projects are designed to help you learn and explore the features of Thot.
 **Each tutorial only takes 15 minutes**, so you can get up and running quickly, and learn in bite sized chunks.
 
 The tutorials are divided by level, and each level has several projects to choose from.
-+ **Beginner:** Learn the basics of the Thot desktop app by building and analyzing your first project.
-+ **Intermediate:** Learn some more advanced features of the desktop app, and start coding your own analysis using
-Thot's API bindings (in your choice of language).
++ **[Beginner](beginner):** Learn the basics of the Thot desktop app by building and analyzing your first project.
++ **[Intermediate](intermediate):** Learn some more advanced features of the desktop app, and start coding your own analysis using
+Thot's API bindings (using the language of your choice).
 + **Advanced:** Coming soon...
 
 # Install
+> :clock9: **10 minutes**
+
 ## Desktop app
 Your first step in getting started is to install the Thot desktop app.
 If you haven't received the install package please sign up for our beta testing list on the [Thot website](https://thot.so#join).
