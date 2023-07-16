@@ -11,17 +11,19 @@ Good luck!
 ## Before we begin
 The analysis scripts used in this project depend on some common libraries. Please ensure they are installed based on your programming language.
 
-### Python users
+### Python
 + [Pandas](https://pandas.pydata.org/getting_started.html)
 + [Matplotlib](https://matplotlib.org/stable/users/getting_started/)
 
-### R users
+### R
 + [Tidyverse](https://www.tidyverse.org/)
 
 ## Creating your first project
 Let's start up the desktop app. If this is your first time running it, you'll first have to create a user account. Enter your email and click the **Get Started** button. This will take you to your dashboard.
 
-If you don't have any projects created yet, click on the **Create my first project** button (otherwise click on the **New** button). You'll be asked to select the folder to place the project in. Let's call this one `silent_fireworks`. Each Thot project is contained in its own folder, where all the resources for that project are organized.
+![Thot desktop start screen](images/desktop_startup.png)
+
+If you don't have any projects created yet, click on the **Create my first project** button (otherwise click on the **New** button). You'll be asked to select the folder to place the project in. Let's call this one `silent_fireworks`. Each Thot project is contained in its own folder where all the resources for that project are organized.
 
 Once you create the project, you will be taken to the project canvas.
 
@@ -32,9 +34,9 @@ For this project the most important thing we need to test is which recipe is qui
 
 ![Project tree for the silent fireworks test.](images/fireworks-tree.png)
 
-Our researchers have already recorded the data and written the analysis scripts and for us, so all we need to do is create a Thot project for our experiments and run the analysis.
+Our researchers have already recorded the data and written the analysis scripts for us, so all we need to do is create a Thot project for our experiments and run the analysis.
 
-Because of our short time frame to get this analysis done, we'll build this project quick and dirty, using the most used features of Thot.
+Because of our short time frame to get this done, we'll build this project quick and dirty, using the most common features of Thot's dersktop app.
 
 ### Setting up your project tree
 Let's start by annotating our the root **Container** by clicking on it. This will open the properties widget. Enter the following information (leaving the rest blank).
@@ -48,8 +50,9 @@ Let's start by annotating our the root **Container** by clicking on it. This wil
 
 ![Setting the root Container's properties.](images/root_container_properties.png)
 
-Great! We just made our edited Container. What do Containers do? Well, they Contain things. Namely, they can contain other Containers, Assets, and Script Associations. We'll get to the Assets and Script Associations later on.
+Great! We just edited our first Container. What do Containers do? Well, they Contain things. Namely, they can contain other Containers, Assets, and Script Associations. We'll get to the Assets and Script Associations later on.
 
+#### Adding a child
 Let's add our first child Container for Recipe A. You probably noticed the plus icon that appears when you hovered over the root Container. Go ahead and give it a click. This will open the **Add child** dialog. Let's name the child Container **Recipe A**. After creating it, give it a `type` of **recipe**.
 
 |     |     |
@@ -57,6 +60,7 @@ Let's add our first child Container for Recipe A. You probably noticed the plus 
 | **Name:** | Recipe A |
 | **Type:** | recipe |
 
+#### Metadata
 We'll also add metadata to this Container. This allows us to attach metadata to our data. Child Containers inherit the metadata from their ancestors, but can overwrite it by declaring a new value with the same name.
 
 To add metadata click on the **+** icon in the **Metadata** section and enter the following metadata:
@@ -87,57 +91,60 @@ Repeat this for Batch 2.
 
 Great! We've now created our `Recipe A` branch.
 
-`Recipe B` will have the exact same structure with only the name of the recipe Container changed. Let's saves ourselves some work by duplicating the `Recipe A` tree and changing the required information.
+`Recipe B` will have the exact same structure with only the name of the recipe Container changed. Let's save ourselves some work by duplicating the `Recipe A` tree and changing the required information.
 
-Hover over the kebab (three dot) menu in the upper right cornre of the `Recipe A` Container and select `Duplicate tree`.
+Hover over the kebab (three dot) menu in the upper right corner of the `Recipe A` Container and select `Duplicate tree`.
 
 ![Duplicating a tree](images/duplicate_tree.png)
 
-Click on the newly created `Recipe A (copy)` Container to open its properties widget and change its name to `Recipe B`.
+Click on the newly created `Recipe A (Copy)` Container to open its properties widget and change its name to `Recipe B`.
 
 Great! Our project's structure is now complete, and we can start adding data to it.
 
 ## Adding data to your project
-Now that we have our tree, we can add data. Most often data is added to the lowest level Containers in our project because these are the things we actually run experiments on.
-In Thot, any data file -- CSV, text, images, binary, anything -- is called an Asset.
+Now that we have our tree, we can add data. Most often data is added to the lowest level Containers because these are the individual/samples/spicimens we actually run experiments on.
+In Thot, any data file -- CSV, text, images, binary, anything -- is called an **Asset**.
 
 > [Download the data](data/fireworks_data.zip)
 
-Open a file explorer and navigate to the data folder. Drag and drop the data for each of the batches on to the respective Container. (e.g. Drop `a1-data.csv` on the `Recipe A > Batch 1` Container.) You'll see the Assets appear in the preview as you add them. 
+Adding data to a Container is as simple as Drag-and-dropping the file on it. For each of the batches, add the respective data. (e.g. Drop `a1-data.csv` on the `Recipe A > Batch 1` Container.) You'll see the Assets appear in the preview as you add them. 
 
 ### Bulk editing
-Let's edit the names of Assets to make them more descriptive. <kbd>Shift</kbd> + click on each of them. This opens the `Bulk Editing` widget. Using this same technique you can select multiple Containers as well, or a mix of Containers and Assets.
+Let's edit the names of Assets to make them more descriptive. <kbd>Shift</kbd> + click on each of the newly add files. This opens the `Bulk Editing` widget. Using this same technique you can select multiple Containers as well, or a mix of Containers and Assets.
 
 ![Bulk edit menu](images/bulk_edit_menu-quick_start.png)
 
 Set the `name` of the Assets to `Noise Data` and their `type` to `noise-data`.
 
-Let's take a brief moment to check that we've assigned the `type`s of the Containers correctly, too. Change the **Preview** in the upper left of the canvas to `Type`.
+## Preview
+Let's take a brief moment to check that we've assigned the `type`s of the Containers correctly. Change the **Preview** in the upper left of the canvas to `Type`.
+
+![Preview menu](images/preview_menu.png)
 
 Wonderful! We've now created our project structure and added our data. Next we'll look at how to analyze the data using Thot Scripts.
 
 ## Analyzing the data
-Analysis of a Thot project starts at the bottom most level of the project tree and works its way up. Each Script can be thought of as a machine that takes Assets in and produces new Assets. The new Assets can then be consumed by other Scripts. Our analysis scripts have already been implemented, so all we need to do is assign them to the correct Containers.
+Analysis of a Thot project starts at the bottom most level of the project tree and works its way up. Each **Script** can be thought of as a machine that takes Assets in and produces new Assets. The new Assets can then be consumed by other Scripts. Our analysis scripts have already been implemented, so all we need to do is assign them to the correct Containers.
 
 > **Download the analysis scripts**
 > + [Python](py_analysis/fireworks_analysis-py.zip)
 > + [R](r_analysis/fireworks_analysis-r.zip)
 
 > **Note**
-> Thot exposes a simple interface that wraps around the actual analysis that you do in your scripts. We cover this in the [intermediate tutorials](/intermediate), but we encourage you to open the provided analysis files and take a look for yourself. The longest is 20 lines of code with comments explaining each line.
+> Thot exposes a simple interface that wraps around the actual analysis that you do in your scripts. We cover this in the [intermediate tutorials](/intermediate), but encourage you to open the provided analysis files and take a look for yourself. The longest is 20 lines of code with comments explaining each line.
 
 Associating scripts happens in two steps. First, we'll add the analysis scripts to the project, then we'll associate them to the correct Containers.
 
-Unselect all the `Resource`s (Containers and Assets) by clicking on an empty spot in the canvas. In the details bar click the **Add Scripts** button, and select the three analysis scripts for the project.
+Unselect all the **Resources** (Containers and Assets) by clicking an empty spot in the canvas. In the details bar click the **Add scripts** button, and select the three analysis scripts for the project.
 
-Select all the `Batch` Containers and associate the `noise_stats` script to them. Then, add the `recipe_stats` script to both `Recipe` Containers, and the `recipe_comparison` script to the root Container. You can change the preview to `Scripts` to verify everything is correct.
+Select all the `Batch` Containers and associate the `noise_stats` script to them by clicking the **+** icon in the **Scripts** section of the properties widget. Similarly, add the `recipe_stats` script to both `Recipe` Containers, and the `recipe_comparison` script to the root Container. Change the preview to `Scripts` to verify everything is correct.
 
 ![Script associations](images/script_associations.png)
 
 We're almost there now! Let's change our preview back to `Data` and click the `Analyze` button to run our analysis.
 
 > **Warning**
-> Running the analysis may give you an error. If this occurs, an error with a detailed error message will appear. A common error is that the interpreter path is not available. If you have some programming experience, you can specify the path to use with by opening the `developer settings` from the menu.
+> Running the analysis may give you an error. If this occurs, an error with a detailed error message will appear. A common error is that the interpreter path is not available. If you have some programming experience, you can specify the path to use with by opening the **Developer settings** from the **Thot** menu.
 >
 > If you need any help, never hesitate to send us a message on our [Discord](https://discord.gg/Kv2c5XynfV) or at info@thot.so.
 

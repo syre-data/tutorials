@@ -10,6 +10,7 @@ This is your place to get started using Thot. In these tutorials you'll learn th
 + Ideas
     - Top-down organization
     - Bottom-up analysis
+    - Everything is files and folders
 + Using the desktop app to
     - Build a project
     - Organize your data

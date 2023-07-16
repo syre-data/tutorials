@@ -17,7 +17,8 @@ Thot's API bindings (using the language of your choice).
 ## Desktop app
 Your first step in getting started is to install the Thot desktop app.
 If you haven't received the install package please sign up for our beta testing list on the [Thot website](https://thot.so#join).
-Installing the app should be the same as installing any other application for your OS. You can view OS-specific instructional video on [our YouTube channel]().
+Installing the app should be the same as installing any other application for your OS. 
+**Video walk-through**
 + [Windows]()
 + [Mac]()
 + [Linux]()
@@ -29,7 +30,7 @@ We currently offer language bindings for
 + R
 
 Our packages can be installed as you would install any other package for your programming language of choice.
-You can watch our language specific install install instructions on [our YouTube channel]().
+**Video walk-through**
 + [Python]()
 + [R]()
 
