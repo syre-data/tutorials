@@ -146,20 +146,22 @@ We're almost there now! Let's change our preview back to `Data` and click the `A
 > **Warning**
 > Running the analysis may give you an error. If this occurs, an error with a detailed error message will appear. A common error is that the interpreter path is not available. If you have some programming experience, you can specify the path to use with by opening the **Developer settings** from the **Thot** menu.
 >
-> If you need any help, never hesitate to send us a message on our [Discord](https://discord.gg/Kv2c5XynfV) or at info@thot.so.
+> If you need any help, never hesitate to send us a message on [Discord](https://discord.gg/Kv2c5XynfV) or at info@thot.so.
 
 Once the analysis is complete you'll see the newly created Assets appear in the project tree. Which recipe is quieter? Open the `Recipe Comparison` Assets in the `Silent Fireworks` Container to find out. (No, you're not seeing double, there are two of them. One is a CSV file and the other is a plot.) To preview an Asset you can double click on it.
+
+## Sharing results
+You did it! Mr. Puzzle will be extatic to know which recipe to use for the fishs' fireworks, and just in time, too!
+
+Unfortunately, Mr. Puzzle is a bit of an old timer, and hasn't yet adopted Thot himself yet (we hope you can convince him to try it out, though). Luckily for us, everything in Thot is just files and folders, so sharing the results with him is super simple.
+
+Open the root Container's kebab (three dot) menu and click the **Open folder** action. This will open the data folder of the project, so you can easily send Mr. Puzzle the final plot, justifying your conclusion.
 
 > **Download the final project**
 > + [Python](completed_projects/fireworks_py.zip)
 > + [R](completed_projects/fireworks_r.zip)
 
-## Sharing results
-You did it! Mr. Puzzle will be extatic to know which recipe to use for the fishs' fireworks, and just in time, too!
-Unfortunately, Mr. Puzzle is a bit of an old timer, and hasn't yet adopted Thot himself yet (we hope you can convince him to try it out, though). Luckily for us, everything in Thot is just files and folders, so sharing the results with him is super simple.
-
-Open the root Container's kebab (three dot) menu and click the **Open folder** action. This will open the data folder of the project, so you can easily send Mr. Puzzle the final plot, justifying your conclusion.
-
 ## What next?
 The R+D team have just created a new recipe! We'll need to add it to our current project so we can compare it with the current results, and also create our own analysis script.
 If you're ready for your next challenge, get started with the [intermediate tutorials](/intermediate), or play around with the current project yourself.
+
