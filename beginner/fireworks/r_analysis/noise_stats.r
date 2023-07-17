@@ -2,14 +2,18 @@ suppressPackageStartupMessages(library(tidyverse))
 library(thot)
 
 # initialize thot project
-db <- database(dev_root = "/home/brian/Downloads/thot-projects/fireworks/data/Recipe A/Batch 1/")
+db <- database()
 
 # get noise data
 noise_data <- db |> find_asset(type = "noise-data")
 
 # import data into tibble
 df <- noise_data@file |> read_csv(
-  col_types = cols(Trial = col_integer(), "Volume [dB]" = col_double()))
+  col_types = cols(
+    Trial = col_integer(),
+    "Volume [dB]" = col_double()
+  )
+)
 
 df <- df |> rename("trial" = "Trial", "volume" = "Volume [dB]")
 
@@ -19,10 +23,14 @@ sdf <- df |> summarise(
   mean = mean(volume),
   std = sd(volume),
   min = min(volume),
-  max = max(volume))
+  max = max(volume)
+)
 
 # create new asset for the statistics
-stats_path <- db |> add_asset("noise-stats.csv", name = "Noise Statistics", type = "noise-stats")
+stats_path <- db |> add_asset(
+  "noise-stats.csv",
+  name = "Noise Statistics", type = "noise-stats"
+)
 
 # save the statistics to the new asset
 sdf |> write.csv(stats_path, row.names = FALSE)

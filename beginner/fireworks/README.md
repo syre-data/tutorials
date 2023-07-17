@@ -19,11 +19,11 @@ The analysis scripts used in this project depend on some common libraries. Pleas
 + [Tidyverse](https://www.tidyverse.org/)
 
 ## Creating your first project
-Let's start up the desktop app. If this is your first time running it, you'll first have to create a user account. Enter your email and click the **Get Started** button. This will take you to your dashboard.
+Let's start up the desktop app. If this is your first time running it, you'll first have to create a user account. Enter your email and click the **Get started!** button. This will take you to your dashboard.
 
 ![Thot desktop start screen](images/desktop_startup.png)
 
-If you don't have any projects created yet, click on the **Create my first project** button (otherwise click on the **New** button). You'll be asked to select the folder to place the project in. Let's call this one `silent_fireworks`. Each Thot project is contained in its own folder where all the resources for that project are organized.
+If you don't have any projects created yet, click on the **Create your first project** button (otherwise click on the **New** button). You'll be asked to select the folder to place the project in. Let's call this one `silent_fireworks`. Each Thot project is contained in its own folder where all the resources for that project are organized.
 
 Once you create the project, you will be taken to the project canvas.
 
@@ -32,7 +32,7 @@ The first thing we need to do is build our project structure. Thot uses a tree t
 
 For this project the most important thing we need to test is which recipe is quieter, so our top level grouping will be the recipes. Unfortunately, testing underwater fireworks happens to be quite expensive, so we will only be able to make two batches for each recipe. The batches will be our second level. This gives us the tree below.
 
-![Project tree for the silent fireworks test.](images/fireworks-tree.png)
+![Project tree for the silent fireworks test.](images/fireworks_tree.png)
 
 Our researchers have already recorded the data and written the analysis scripts for us, so all we need to do is create a Thot project for our experiments and run the analysis.
 
@@ -67,7 +67,7 @@ To add metadata click on the **+** icon in the **Metadata** section and enter th
 
 | Name | Type | Value
 | --- | --- | ---
-| recipe | string | a
+| recipe | string | A
 
 ![Recipe A Container final properties](images/recipe_a_properties.png)
 
@@ -149,6 +149,8 @@ We're almost there now! Let's change our preview back to `Data` and click the `A
 > If you need any help, never hesitate to send us a message on [Discord](https://discord.gg/Kv2c5XynfV) or at info@thot.so.
 
 Once the analysis is complete you'll see the newly created Assets appear in the project tree. Which recipe is quieter? Open the `Recipe Comparison` Assets in the `Silent Fireworks` Container to find out. (No, you're not seeing double, there are two of them. One is a CSV file and the other is a plot.) To preview an Asset you can double click on it.
+
+![Final project](images/final_project.png)
 
 ## Sharing results
 You did it! Mr. Puzzle will be extatic to know which recipe to use for the fishs' fireworks, and just in time, too!
