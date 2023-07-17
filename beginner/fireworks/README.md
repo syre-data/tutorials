@@ -105,7 +105,7 @@ Great! Our project's structure is now complete, and we can start adding data to 
 Now that we have our tree, we can add data. Most often data is added to the lowest level Containers because these are the individual/samples/spicimens we actually run experiments on.
 In Thot, any data file -- CSV, text, images, binary, anything -- is called an **Asset**.
 
-> [Download the data](data/fireworks_data.zip)
+> [Download the data]()
 
 Adding data to a Container is as simple as Drag-and-dropping the file on it. For each of the batches, add the respective data. (e.g. Drop `a1-data.csv` on the `Recipe A > Batch 1` Container.) You'll see the Assets appear in the preview as you add them. 
 
@@ -127,8 +127,8 @@ Wonderful! We've now created our project structure and added our data. Next we'l
 Analysis of a Thot project starts at the bottom most level of the project tree and works its way up. Each **Script** can be thought of as a machine that takes Assets in and produces new Assets. The new Assets can then be consumed by other Scripts. Our analysis scripts have already been implemented, so all we need to do is assign them to the correct Containers.
 
 > **Download the analysis scripts**
-> + [Python](py_analysis/fireworks_analysis-py.zip)
-> + [R](r_analysis/fireworks_analysis-r.zip)
+> + [Python]()
+> + [R]()
 
 > **Note**
 > Thot exposes a simple interface that wraps around the actual analysis that you do in your scripts. We cover this in the [intermediate tutorials](/intermediate), but encourage you to open the provided analysis files and take a look for yourself. The longest is 20 lines of code with comments explaining each line.
@@ -158,10 +158,11 @@ Unfortunately, Mr. Puzzle is a bit of an old timer, and hasn't yet adopted Thot 
 Open the root Container's kebab (three dot) menu and click the **Open folder** action. This will open the data folder of the project, so you can easily send Mr. Puzzle the final plot, justifying your conclusion.
 
 > **Download the final project**
-> + [Python](completed_projects/fireworks_py.zip)
-> + [R](completed_projects/fireworks_r.zip)
+> + [Python]()
+> + [R]()
 
 ## What next?
 The R+D team have just created a new recipe! We'll need to add it to our current project so we can compare it with the current results, and also create our own analysis script.
+
 If you're ready for your next challenge, get started with the [intermediate tutorials](/intermediate), or play around with the current project yourself.
 
