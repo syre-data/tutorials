@@ -1,5 +1,4 @@
 # Thot tutorials
-
 Welcome to Thot's tutorials!
 
 These projects are designed to help you learn and explore the features of Thot.
@@ -13,47 +12,41 @@ Thot's API bindings (using the language of your choice).
 + **Advanced:** Coming soon...
 
 # Install
->
 > :clock9: **10 minutes**
 
 ## Desktop app
-
 Your first step in getting started is to install the Thot desktop app.
 If you haven't received the install package please sign up for our beta testing list on the [Thot website](https://thot.so#join).
-Installing the app should be the same as installing any other application for your OS.
-**Video walk-through**
+Installing the app should be the same as installing any other application for your OS. 
 
+**Video walk-through**
 <details>
   <summary>Windows</summary>
-   <img src="videos/windows_install.gif" alt="windows install"/>
+   <img src="assets/install-windows.gif" alt="windows install"/>
 </details>
 <details>
   <summary>Mac</summary>
-   <img src="videos/mac_install.gif" alt="mac install"/>
+   <img src="assets/install-mac.gif" alt="mac install"/>
 </details>
 <details>
   <summary>Linux</summary>
-   <img src="videos/linux_install.gif" alt="linux install"/>
+   <img src="assets/install-linux.gif" alt="linux install"/>
 </details>
 
 ## Language bindings
-
 Next, you'll need to install the language bindings for your analysis scripts.
 We currently offer language bindings for
-
 + Python
 + R
 
 Our packages can be installed as you would install any other package for your programming language of choice.
-**Video walk-through**
 
+**Video walk-through**
 + [Python]()
 + [R]()
 
 # Get started
-
 We suggest you start with [beginner tutorials](beginner) which will get you familiar with the basics of the Thot desktop app.
 
 # Questions
-
-Please feel free to reach out to us on our [Discord](https://discord.gg/Kv2c5XynfV), or send us an email at <info@thot.so>.
+Feel free to reach out to us on our [Discord](https://discord.gg/Kv2c5XynfV), or send us an email at <info@thot.so>.
