@@ -21,7 +21,7 @@ The analysis scripts used in this project depend on some common libraries. Pleas
 ## Creating your first project
 Let's start up the desktop app. If this is your first time running it, you'll first have to create a user account. Enter your email and click the **Get started!** button. This will take you to your dashboard.
 
-![Thot desktop start screen](assets/desktop_startup.png)
+![Thot desktop start screen](images/desktop_startup.png)
 
 If you don't have any projects created yet, click on the **Create your first project** button (otherwise click on the **New** button). You'll be asked to select the folder to place the project in. Let's call this one `silent_fireworks`. Each Thot project is contained in its own folder where all the resources for that project are organized.
 
@@ -32,7 +32,7 @@ The first thing we need to do is build our project structure. Thot uses a tree t
 
 For this project the most important thing we need to test is which recipe is quieter, so our top level grouping will be the recipes. Unfortunately, testing underwater fireworks happens to be quite expensive, so we will only be able to make two batches for each recipe. The batches will be our second level. This gives us the tree below.
 
-![Project tree for the silent fireworks test.](assets/fireworks_tree.png)
+![Project tree for the silent fireworks test.](images/fireworks_tree.png)
 
 Our researchers have already recorded the data and written the analysis scripts for us, so all we need to do is create a Thot project for our experiments and run the analysis.
 
@@ -47,7 +47,7 @@ Let's start by annotating our the root **Container** by clicking on it. This wil
 | **Type:** | project
 | **Description:** | Determining whether recipe A or B is quieter. |
 
-![Setting the root Container's properties.](assets/root_container_properties.png)
+![Setting the root Container's properties.](images/root_container_properties.png)
 
 Great! We just edited our first Container. What do Containers do? Well, they Contain things. Namely, they can contain other Containers, Assets, and Script Associations. We'll get to the Assets and Script Associations later on.
 
@@ -68,7 +68,7 @@ To add metadata click on the **+** icon in the **Metadata** section and enter th
 | --- | --- | ---
 | recipe | string | A
 
-![Recipe A Container final properties](assets/recipe_a_properties.png)
+![Recipe A Container final properties](images/recipe_a_properties.png)
 
 On to the batches. Create a child Container of `Recipe A` with the following information:
 
@@ -94,7 +94,7 @@ Great! We've now created our `Recipe A` branch.
 
 Hover over the kebab (three dot) menu in the upper right corner of the `Recipe A` Container and select `Duplicate tree`.
 
-![Duplicating a tree](assets/duplicate_tree.png)
+![Duplicating a tree](images/duplicate_tree.png)
 
 Click on the newly created `Recipe A (Copy)` Container to open its properties widget and change its name to `Recipe B`.
 
@@ -111,14 +111,14 @@ Adding data to a Container is as simple as Drag-and-dropping the file on it. For
 ### Bulk editing
 Let's edit the names of Assets to make them more descriptive. <kbd>Shift</kbd> + click on each of the newly add files. This opens the `Bulk Editing` widget. Using this same technique you can select multiple Containers as well, or a mix of Containers and Assets.
 
-![Bulk edit menu](assets/bulk_edit.png)
+![Bulk edit menu](images/bulk_edit.png)
 
 Set the `name` of the Assets to `Noise Data` and their `type` to `noise-data`.
 
 ## Preview
 Let's take a brief moment to check that we've assigned the `type`s of the Containers correctly. Change the **Preview** in the upper left of the canvas to `Type`.
 
-![Preview menu](assets/preview_menu.png)
+![Preview menu](images/preview_menu.png)
 
 Wonderful! We've now created our project structure and added our data. Next we'll look at how to analyze the data using Thot Scripts.
 
@@ -139,7 +139,7 @@ Unselect all the **Resources** (Containers and Assets) by clicking an empty spot
 
 Select all the `Batch` Containers and associate the `noise_stats` script to them by clicking the **+** icon in the **Scripts** section of the properties widget. Similarly, add the `recipe_stats` script to both `Recipe` Containers, and the `recipe_comparison` script to the root Container. Change the preview to `Scripts` to verify everything is correct.
 
-![Script associations](assets/script_associations.png)
+![Script associations](images/script_associations.png)
 
 We're almost there now! Let's change our preview back to `Data` and click the `Analyze` button to run our analysis.
 
@@ -150,7 +150,7 @@ We're almost there now! Let's change our preview back to `Data` and click the `A
 
 Once the analysis is complete you'll see the newly created Assets appear in the project tree. Which recipe is quieter? Open the `Recipe Comparison` Assets in the `Silent Fireworks` Container to find out. (No, you're not seeing double, there are two of them. One is a CSV file and the other is a plot.) To preview an Asset you can double click on it.
 
-![Final project](assets/final_project.png)
+![Final project](images/final_project.png)
 
 ## Sharing results
 You did it! Mr. Puzzle will be extatic to know which recipe to use for the fishs' fireworks, and just in time, too!

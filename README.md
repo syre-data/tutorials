@@ -2,6 +2,7 @@
 Welcome to Thot's tutorials!
 
 These projects are designed to help you learn and explore the features of Thot.
+
 **Each tutorial only takes 15 minutes**, so you can get up and running quickly, and learn in bite sized chunks.
 
 The tutorials are divided by level, and each level has several projects to choose from.
@@ -16,34 +17,39 @@ Thot's API bindings (using the language of your choice).
 
 ## Desktop app
 Your first step in getting started is to install the Thot desktop app.
-If you haven't received the install package please sign up for our beta testing list on the [Thot website](https://thot.so#join).
 Installing the app should be the same as installing any other application for your OS. 
 
-**Video walk-through**
-<details>
-  <summary>Windows</summary>
-   <img src="assets/install-windows.gif" alt="windows install"/>
-</details>
-<details>
-  <summary>Mac</summary>
-   <img src="assets/install-mac.gif" alt="mac install"/>
-</details>
-<details>
-  <summary>Linux</summary>
-   <img src="assets/install-linux.gif" alt="linux install"/>
-</details>
+**Downloads**
+| Windows | Mac | Linux |
+| --- | --- | --- |
+| [Download](https://releases.thot.so/public/manual/desktop/Thot_0.10.0_x64_en-US-windows.msi) | [M1]() | [AppImage](https://releases.thot.so/public/manual/desktop/thot_0.10.0_amd64-linux.AppImage") |
+| | [Intel]() | [deb](https://releases.thot.so/public/manual/desktop/thot_0.10.0_amd64-linux.deb) |
+ 
 
 ## Language bindings
 Next, you'll need to install the language bindings for your analysis scripts.
-We currently offer language bindings for
-+ Python
-+ R
+We offer language bindings for the languages below, which are installed as you would for any other package.
 
-Our packages can be installed as you would install any other package for your programming language of choice.
+(If you don't see your favorite language, let us know!)
 
-**Video walk-through**
-+ [Python]()
-+ [R]()
+<details>
+    <summary>Python</summary>
+    <a href="https://releases.thot.so/public/manual/api_bindings/thot_data-0.10.0-py.tar.gz"
+        target="_blank">
+        Python download
+    </a>
+
+    pip install <path/to/thot_data-0.10.0-py.tar.gz>
+</details>
+<details>
+    <summary>R</summary>
+    <a href="https://releases.thot.so/public/manual/api_bindings/thot_0.10.0-r.tar.gz"
+        targe="_blank">
+        R download
+    </a>
+
+    install.packages("path/to/thot_0.10.0-r.tar.gz", repos=NULL, type=“source”)
+</details>
 
 # Get started
 We suggest you start with [beginner tutorials](beginner) which will get you familiar with the basics of the Thot desktop app.
