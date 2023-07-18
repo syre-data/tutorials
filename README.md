@@ -20,7 +20,7 @@ Installing the app should be the same as installing any other application for yo
 **Downloads**
 | Windows | Mac | Linux |
 | --- | --- | --- |
-| [10 / 11](https://releases.thot.so/public/manual/desktop/Thot_0.10.0_x64_en-US-windows.msi) | [M1](https://releases.thot.so/public/manual/desktop/Thot_0.10.0_aarch64-mac_m1.dmg) | [AppImage](https://releases.thot.so/public/manual/desktop/thot_0.10.0_amd64-linux.AppImage") |
+| [10 / 11](https://releases.thot.so/public/manual/desktop/Thot_0.10.0_x64_en-US-windows.msi) | [M1](https://releases.thot.so/public/manual/desktop/Thot_0.10.0_aarch64-mac_m1.dmg) | [AppImage](https://releases.thot.so/public/manual/desktop/thot_0.10.0_amd64-linux.AppImage) |
 | | [Intel](https://releases.thot.so/public/manual/desktop/Thot_0.10.0_x64-mac_intel.dmg) | [deb](https://releases.thot.so/public/manual/desktop/thot_0.10.0_amd64-linux.deb) |
  
 
