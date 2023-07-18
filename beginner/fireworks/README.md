@@ -11,12 +11,10 @@ Good luck!
 ## Before we begin
 The analysis scripts used in this project depend on some common libraries. Please ensure they are installed based on your programming language.
 
-### Python
-+ [Pandas](https://pandas.pydata.org/getting_started.html)
-+ [Matplotlib](https://matplotlib.org/stable/users/getting_started/)
-
-### R
-+ [Tidyverse](https://www.tidyverse.org/)
+| Python | R |
+| --- | --- |
+| [Pandas](https://pandas.pydata.org/getting_started.html) | [Tidyverse](https://www.tidyverse.org/) |
+| [Matplotlib](https://matplotlib.org/stable/users/getting_started/) | |
 
 ## Creating your first project
 Let's start up the desktop app. If this is your first time running it, you'll first have to create a user account. Enter your email and click the **Get started!** button. This will take you to your dashboard.
@@ -104,7 +102,7 @@ Great! Our project's structure is now complete, and we can start adding data to 
 Now that we have our tree, we can add data. Most often data is added to the lowest level Containers because these are the individual/samples/spicimens we actually run experiments on.
 In Thot, any data file -- CSV, text, images, binary, anything -- is called an **Asset**.
 
-> [Download the data]()
+> [Download the data](https://resources.thot.so/public/tutorials/beginner/fireworks/project_resources/data.zip)
 
 Adding data to a Container is as simple as Drag-and-dropping the file on it. For each of the batches, add the respective data. (e.g. Drop `a1-data.csv` on the `Recipe A > Batch 1` Container.) You'll see the Assets appear in the preview as you add them.
 
@@ -127,8 +125,8 @@ Analysis of a Thot project starts at the bottom most level of the project tree a
 
 > **Download the analysis scripts**
 >
-> + [Python]()
-> + [R]()
+> + [Python](https://resources.thot.so/public/tutorials/beginner/fireworks/project_resources/py_analysis.zip)
+> + [R](https://resources.thot.so/public/tutorials/beginner/fireworks/project_resources/r_analysis.zip)
 
 > **Note**
 > Thot exposes a simple interface that wraps around the actual analysis that you do in your scripts. We cover this in the [intermediate tutorials](/intermediate), but encourage you to open the provided analysis files and take a look for yourself. The longest is 20 lines of code with comments explaining each line.
@@ -144,7 +142,14 @@ Select all the `Batch` Containers and associate the `noise_stats` script to them
 We're almost there now! Let's change our preview back to `Data` and click the `Analyze` button to run our analysis.
 
 > **Warning**
-> Running the analysis may give you an error. If this occurs, an error with a detailed error message will appear. A common error is that the interpreter path is not available. If you have some programming experience, you can specify the path to use with by opening the **Developer settings** from the **Thot** menu.
+> Running the analysis may give you an error. If this occurs, an error with a detailed error message will appear. A common error is that the interpreter path is not available. If you have some programming experience, you can specify the path to use by opening the **Developer settings** from the **Thot** menu, then modifying `runner_settings.json`.
+>
+> ```json
+> {
+>   "python_path": "/path/to/my/python",
+>   "r_path": "/path/to/my/R"
+> }
+> ```
 >
 > If you need any help, never hesitate to send us a message on [Discord](https://discord.gg/Kv2c5XynfV) or at <info@thot.so>.
 
@@ -161,8 +166,8 @@ Open the root Container's kebab (three dot) menu and click the **Open folder** a
 
 > **Download the final project**
 >
-> + [Python]()
-> + [R]()
+> + [Python](https://resources.thot.so/public/tutorials/beginner/fireworks/completed_projects/fireworks_py.zip)
+> + [R](https://resources.thot.so/public/tutorials/beginner/fireworks/completed_projects/fireworks_r.zip)
 
 ## What next?
 The R+D team have just created a new recipe! We'll need to add it to our current project so we can compare it with the current results, and also create our own analysis script.

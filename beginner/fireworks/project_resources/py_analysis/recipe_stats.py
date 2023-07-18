@@ -33,11 +33,10 @@ std = df.loc['std'].pow(2).sum()/4
 stats = pd.DataFrame([mean, std], index = ('mean', 'std'))
 
 # export recipe statistics
-stat_properties = {
-	'name': '{} Statistics'.format(recipe.name),
-	'type': 'recipe-stats',
-	'file': 'recipe-stats.pkl'
-}
+stats_path = db.add_asset(
+    'recipe-stats.pkl',
+	name='{} Statistics'.format(recipe.name),
+	type='recipe-stats'
+)
 
-stats_path = db.add_asset(**stat_properties)
 stats.to_pickle(stats_path)

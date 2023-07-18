@@ -5,12 +5,11 @@ import thot
 # intialize thot
 db = thot.Database()
 
-# prepare data
+# get recipe data
 recipe_stats = db.find_assets(type='recipe-stats')
 
 df = []
 for stat in recipe_stats:
-    # read data for each recipe
     tdf = pd.read_pickle(stat.file)
     tdf.rename({0: stat.metadata['recipe']}, axis = 1, inplace = True)
     
@@ -20,27 +19,26 @@ for stat in recipe_stats:
 df = pd.concat(df, axis = 1)
 
 # export data as csv for reading
-comparison_properties = {
-	'name': 'Recipe Comparison',
-	'type': 'recipe-comparison',
-	'file': 'recipe_comparison.csv' 
-}
+comparison_path = db.add_asset(
+    'recipe_comparison.csv',
+	name='Recipe Comparison',
+	type='recipe-comparison',
+)
 
-comparison_path = db.add_asset(**comparison_properties)
 df.to_csv(comparison_path)
 
-# create bar char and export
+# create bar char
 means = df.loc['mean']
 errs = df.loc['std']
 
 ax = means.plot(kind = 'bar', yerr = errs)
 
-bar_properties = {
-	'name': 'Recipe Comparison',
-	'type': 'recipe-bar-chart',
-	'tags': [ 'chart', 'image' ],
-	'file': 'recipe_comparison.png'
-}
+# add to chart project
+bar_path = db.add_asset(
+    'recipe_comparison.png',
+	name='Recipe Comparison',
+	type='recipe-bar-chart',
+	tags=[ 'chart', 'image' ]
+)
 
-bar_path = db.add_asset(**bar_properties)
 ax.get_figure().savefig(bar_path, format = 'png')

@@ -5,8 +5,6 @@ These projects are designed to help you learn and explore the features of Thot.
 
 **Each tutorial only takes 15 minutes**, so you can get up and running quickly, and learn in bite sized chunks.
 
-The tutorials are divided by level, and each level has several projects to choose from.
-
 + **[Beginner](beginner):** Learn the basics of the Thot desktop app by building and analyzing your first project.
 + **[Intermediate](intermediate):** Learn some more advanced features of the desktop app, and start coding your own analysis using
 Thot's API bindings (using the language of your choice).
@@ -22,8 +20,8 @@ Installing the app should be the same as installing any other application for yo
 **Downloads**
 | Windows | Mac | Linux |
 | --- | --- | --- |
-| [Download](https://releases.thot.so/public/manual/desktop/Thot_0.10.0_x64_en-US-windows.msi) | [M1]() | [AppImage](https://releases.thot.so/public/manual/desktop/thot_0.10.0_amd64-linux.AppImage") |
-| | [Intel]() | [deb](https://releases.thot.so/public/manual/desktop/thot_0.10.0_amd64-linux.deb) |
+| [10 / 11](https://releases.thot.so/public/manual/desktop/Thot_0.10.0_x64_en-US-windows.msi) | [M1](https://releases.thot.so/public/manual/desktop/Thot_0.10.0_aarch64-mac_m1.dmg) | [AppImage](https://releases.thot.so/public/manual/desktop/thot_0.10.0_amd64-linux.AppImage") |
+| | [Intel](https://releases.thot.so/public/manual/desktop/Thot_0.10.0_x64-mac_intel.dmg) | [deb](https://releases.thot.so/public/manual/desktop/thot_0.10.0_amd64-linux.deb) |
  
 
 ## Language bindings

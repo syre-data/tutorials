@@ -3,21 +3,21 @@ library(ggplot2)
 library(thot)
 
 # initialize thot project
-db <- database(dev_root = "/Users/nacho/work/thot/demo/base_projects/fireworks_r/data/")
+db <- database()
 
-# get recipe-stats data
+# get `recipe-stats` data
 recipe_stats <- db |> find_assets(type = "recipe-stats")
 
 # import data into tibble
 df <- list()
 for (stat in recipe_stats) {
-    # Read data for each recipe
-
+    # read data for each recipe
     tdf <- read_csv(stat@file)
     orig_colnames <- colnames(tdf)
-    tdf <- tdf %>%
-        t() %>%
+    tdf <- tdf |>
+        t() |>
         as.data.frame()
+
     colnames(tdf) <- stat@metadata$recipe
     rownames(tdf) <- orig_colnames
     df[[length(df) + 1]] <- tdf
@@ -27,22 +27,34 @@ for (stat in recipe_stats) {
 df <- bind_cols(df)
 
 # create new asset for the statistics
-comparison_path <- db |> add_asset("recipe_comparison.csv", name = "Recipe Comparison", type = "recipe-comparison")
+comparison_path <- db |> add_asset(
+    "recipe_comparison.csv",
+    name = "Recipe Comparison",
+    type = "recipe-comparison"
+)
 
 # save the statistics to the new asset
 df |> write.csv(comparison_path)
 
-# Prepare data for bar chart
-df_long <- df %>%
-    rownames_to_column("statistic") %>%
-    gather(key = "recipe", value = "value", -statistic) %>%
-    spread(key = "statistic", value = "value") %>%
+# prepare data for bar chart
+df_long <- df |>
+    rownames_to_column("statistic") |>
+    gather(key = "recipe", value = "value", -statistic) |>
+    spread(key = "statistic", value = "value") |>
     rename(mean = mean, std = std)
 
-# Create the bar chart with error bars
+# create the bar chart with error bars
 p <- ggplot(data = df_long, aes(x = recipe, y = mean, fill = recipe)) +
     geom_bar(stat = "identity", position = "dodge") +
-    geom_errorbar(aes(x = recipe, ymin = mean - std, ymax = mean + std), width = 0.2, position = position_dodge(width = 0.9)) +
+    geom_errorbar(
+        aes(
+            x = recipe,
+            ymin = mean - std,
+            ymax = mean + std
+        ),
+        width = 0.2,
+        position = position_dodge(width = 0.9)
+    ) +
     theme_minimal() +
     theme(
         axis.title.x = element_blank(),
@@ -50,7 +62,11 @@ p <- ggplot(data = df_long, aes(x = recipe, y = mean, fill = recipe)) +
         legend.position = "none"
     )
 
-bar_path <- db |> add_asset("recipe_comparison.png", name = "Recipe Comparison", type = "recipe-bar-chart")
+bar_path <- db |> add_asset(
+    "recipe_comparison.png",
+    name = "Recipe Comparison",
+    type = "recipe-bar-chart"
+)
 
-# Save the plot to a file
-ggsave(bar_path, plot = p, width = 10, height = 6, dpi = 300)
+# save the plot to file
+bar_path |> ggsave(plot = p, width = 10, height = 6, dpi = 300)

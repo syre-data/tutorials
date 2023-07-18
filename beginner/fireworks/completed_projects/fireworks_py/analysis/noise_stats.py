@@ -15,13 +15,11 @@ df = pd.read_csv(noise_data.file, header = 0, index_col = 0, names = ('trial', '
 stats = df.describe()
 
 # create a new asset for the statistics
-stats_properties = {
-	'name': 'Noise Statistics',
-	'type': 'noise-stats',
-	'file': 'noise-stats.csv'
-}
+stats_path = db.add_asset(
+	'noise-stats.csv',
+	name='Noise Statistics',
+	type='noise-stats'
+)
 
-stats_path = db.add_asset(**stats_properties)
-
-# export the statistics to the new asset
+# save the statistics data
 stats.to_csv(stats_path) 
