@@ -8,7 +8,8 @@ These projects are designed to help you learn and explore the features of Thot.
 + **[Beginner](beginner):** Learn the basics of the Thot desktop app by building and analyzing your first project.
 + **[Intermediate](intermediate):** Learn some more advanced features of the desktop app, and start coding your own analysis using
 Thot's API bindings (using the language of your choice).
-+ **Advanced:** Coming soon...
++ **[Advanced](advanced):** Learn how to adapt projects on the fly, and organize your data even better. 
++ **[API](api):** Get a deeper understanding of Thot's philosophy and API, with examples.
 
 # Install
 > :clock9: **10 minutes**

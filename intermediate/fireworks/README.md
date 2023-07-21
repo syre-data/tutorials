@@ -2,21 +2,21 @@
 > :clock9: **15 minutes**
 
 ## Where did we leave off?
-Ahh, right. You had just saved the company by determining which of the two firework recipes was quieter. You created your first Thot project by creating the project structure, organizing and metadata tagging the raw data, and analyzing that data to quickly get the results you needed.
+Ahh, right. You had just saved the company by determining which of the two firework recipes was quieter. You created your first Thot project by creating the project structure, organizing and annotating the raw data, and analyzing that data to quickly get the results you needed.
 
 The aquarium's New Year's Eve extravaganza went off without a hitch, and both the people and fish loved the show. In the crowd was Famous Dave, from Famous Dave's Scuba Encounters. He was so impressed he wants to put on his own show for his clients, and has asked the Puzzle's team to make it happen!
 
 > **Note**
 > This project depends on the [beginner fireworks tutorial project](/beginner/fireworks).
-> If you don't have it, you can [download it](/beginner/fireworks#sharing-results) at the bottom of the tutorial.
+> If you don't have it, you can [download it](/beginner/fireworks#sharing-results) at the bottom of that tutorial.
 
 ## A new recipe
 The brilliant chemists in Puzzle's R&D department have just sent you a message
 > We need your help!
-> We just came up with a new recipe for the underwater fireworks, but aren't sure if it's better or worse.
+> We just came up with a new recipe for Famous Dave's show, but aren't sure if it's better or worse.
 > 
 > Here is the data:
-> [Recipe C data]()
+> [Recipe C data](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/data.zip)
 >
 > Can you help us?
 
@@ -34,7 +34,7 @@ Let's add the new data in, just as we did before.
 We can now re-analyze the project to incorporate the new results and take a look to see if Recipe C is better.
 
 ### New analysis
-Amazing! It looks like the researchers actually did find a recipe that is quieter. But we, what is that? The error on the values washes out the effect? Looks like we'll need to dig into these numbers a bit deeper to figure out if Recipe C really is better.
+Amazing! It looks like the researchers actually did find a recipe that is quieter. But wait, what is that? The error bar washes out the effect? Looks like we'll need to dig into these numbers a bit deeper to figure out if Recipe C really is better.
 
 Let's write our own script to plot a histogram for all the trials in each recipe.
 <details>
@@ -47,32 +47,190 @@ Let's write our own script to plot a histogram for all the trials in each recipe
 </details>
 
 > **Note**
-> Adding a script to a project copies it in to the project's `analysis` folder, so be sure you are editing the correct file.
+> Adding a script to a project copies it into the project's `analysis` folder, so be sure you are editing the correct file.
 
-#### Interacting with the project
+#### Interacting with our project
 Thot allows us to interact with our project from our scripts. This way we can check our results without having to analyze the project every time we make a change.
 
 Lets start by initializing the database for the script on our Recipe A Container.
 Add the following lines to your new analysis script.
 <details>
     <summary>Python</summary>
-    ```python
+
     # import libraries
     import pandas as pd
     import thot
 
     # initialize thot database
-    db = thot.Database(dev_root="/path/to/silent_fireworks/data/Recipe A")
-    ```
+    db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
 </details>
 <details>
     <summary>R</summary>
-    ```r
+
     # import libraries
     suppressPackageStartupMessages(library(tidyverse))
     library(thot)
 
     # initialize thot database
-    db = database(dev_root="/path/to/silent_fireworks/data/Recipe A")
-    ```
+    db <- database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
 </details>
+
+If you're using an interpreter you can now run these commands and interact with your project.
+Let's try it out by ensuring we are at the correct Container by printing out the name of the root Container of the database.
+<details>
+    <summary>Python</summary>
+    
+    db.root.name
+</details>
+<details>
+    <summary>R</summary>
+
+    db@root$name
+</details>
+You should see "Recipe A" printed out. 
+
+> **Note**
+> The [full API documentation](/api) describes all the available functions for each language, with examples.
+> Documentation should also be available using your editors hints.
+
+#### Finding Assets
+The first thing we want to do is get the actual data we will operate on. To do this Thot has two API calls:
++ **`find_asset`:** Finds a single Asset matching the provided filter, returning the `None` type for the language if no matches are found. If multiple matches are found, a random one is returned.
++ **`find_assets`:** Finds multiple Assets matching the filter as a `list` in the given language.
+
+We want to get all the data with a `type` of **noise-data**, so we'll use `find_assets`.
+<details>
+    <summary>Python</summary>
+
+    # find all data with type `noise-data` in the subtree
+    noise_data = db.find_assets(type="noise-data")
+</details>
+<details>
+    <summary>R</summary>
+
+    # find all data with type `noise-data` in the subtree
+    noise_data <- db |> find_assets(type="noise-data")
+</details>
+
+The `noise_data` variable should now hold a list with two elements. But why only two? We have six Assets with the `type` **noise-data** -- one in each batch.
+
+This is how some of Thot's automatic organization works. When running a script, it only has access to the Container it's running on and everything below it. It can't access anything above it or on the same level.
+(In fancy talk, a Thot project acts as a [**hierarchical database**](https://en.wikipedia.org/wiki/Hierarchical_database_model). This is what allows us to duplicate tree structures without needing to re-program anything.
+Because we set the `dev_root` of the database to Recipe A, the `noise_data` variable should contain the noise data from both batches of Recipe A. But how can we verify this?
+
+#### Accessing metadata
+For each recipe Container, we assigned the `recipe` metadata. Let's first ensure that our root Container has the correct metadata assigned to it. Run the command
+<details>
+    <summary>Python</summary>
+
+    db.root.metadata
+</details>
+<details>
+    <summary>R</summary>
+
+    db@root$metadata
+</details>
+and you will see all the metadata assigned to the Recipe A Container. As you can see, metadata is stored in your languages verion of a dictionary or map. 
+
+Great! Our root Container has its `recipe` metadata set to **A**. But what about the noise data? We haven't assigned any metadata to it,so how can we tell our Batch 1 from our Batch 2 data? Let's take a look at the metadata for each of the Assets.
+<details>
+    <summary>Python</summary>
+
+    for data in noise_data:
+        print(data.metadata)
+</details>
+<details>
+    <summary>R</summary>
+
+</details>
+
+Woah! Our noise data has metadata attached to it even though we didn't assign any to it. This is because both Containers and Assets **inherit metadata** from their ancestors (Containers higher up in the tree). This way you don't need to copy-paste metadata everywhere. 
+
+> **Note**
+> Metadata values are overwritten at lower levels if assigned at multiple levels.
+
+When using Thot there should be a single source of truth. That is, we should only have to label something in one place. If we change that label, that change should be automatically reflected everywhere.
+
+#### Using data
+Now that we know we're operating on the correct data, let's actually plot it.
+<details>
+    <summary>Thot's API sandwich</summary>
+    Thot uses a "sandwhich" model for its API, where Thot is the bread. Below you'll see how you start by using Thot to get the data you need from your project. You then do whatever analysis you want (the meat). Finally, you save any new data back into your project.
+    [Learn more](/api#sandwich-model)
+</details>
+
+In the `recipe_histogram` script add the following
+<details>
+    <summary>Python</summary>
+
+    # load data into dataframe
+    df = []
+    for data in noise_data:
+        tdf = pd.read_csv(data.file, index_col=0) # get file from Asset
+        tdf = tdf.rename(columns={"Volume [dB]": data.metadata["batch"]}) # rename columns by batch
+        df.append(tdf)
+
+    df = pd.concat(df, axis=1) # merge dataframes into one
+</details>
+<details>
+    <summary>R</summary>
+
+</details>
+There are two important things that we learned here:
+
+1. Assets have a `file` property that stores the absolute path to the associated data file.
+2. We saw how we can use the metadata we assigned in the desktop app in our analysis scripts.
+
+These two ideas are what give Thot so much power, so it's worth thinking about how you can use them in your own projects for a minute.
+
+Time to see what this data looks like.
+In the `recipe_histogram` script add the following
+<details>
+    <summary>Python</summary>
+
+    # plot the data
+    ax = df.plot.hist(alpha=0.5)
+</details>
+<details>
+    <summary>R</summary>
+
+</details>
+
+#### Creating Assets
+Let's save the plot as a new Asset into our project.
+Add the following code to the `recipe_histogram` script.
+<details>
+    <summary>Python</summary>
+
+    # save plot
+    fig_path = db.add_asset(
+        "noise_data_histogram.png",
+        name="Noise Data Histogram",
+        tags=["figure"],
+        description="Histogram of noise data by batch."
+    )
+
+    ax.get_figure().savefig(fig_path)
+</details>
+<details>
+    <summary>R</summary>
+
+</details>
+
+> **Note**
+> To see a new Asset created in interactive mode in your project you'll need to restart the desktop app.
+> The desktop app doesn't currently update if you make changes outside of it.
+> This is an update that is coming soon.
+
+Assign the `recipe_histogram` script to the Recipe Containers and re-analyze the project. What do the results show?
+
+> Download the complete `recipe_histogram` script
+> 
+> [Python](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.py)
+> [R](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.r)
+
+## Adjusting workflows
+Oh no! It looks like there is an outlier in the data. How can we deal with this? 
+We'll have to give our engineers a call to see what could have caused this.
+
+Check out the [advanced tutorial](/advanced) to resolve the issue.

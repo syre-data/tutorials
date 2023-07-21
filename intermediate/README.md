@@ -5,8 +5,10 @@ In these tutorials you'll learn some more advanced functions of the Desktop app,
 
 ## Concepts covered
 + Ideas
+    - Hierarchical database
+    - Metadata inheritence
     - Single source of truth
-    - Analysis dependencies
+    - Thot's "sandwhich" API
 + Using the desktop app to
     - Add new data and analysis
     - Set up analysis dependencies

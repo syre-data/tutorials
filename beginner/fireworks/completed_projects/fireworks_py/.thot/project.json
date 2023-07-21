@@ -1,12 +1,12 @@
 {
-  "rid": "cb5cd250-1a13-4cda-bec8-b39c10d0bf6c",
+  "rid": "b228fe8c-ca7c-4490-a6f4-bc5b4cc98615",
   "creator": {
     "User": {
-      "Id": "100c526d-be2d-4ec8-aed7-3fb050511c56"
+      "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
     }
   },
-  "created": "2023-04-28T12:19:56.896980Z",
-  "name": "fireworks_py",
+  "created": "2023-07-20T09:04:48.669822800Z",
+  "name": "silent_fireworks",
   "description": null,
   "data_root": "data",
   "universal_root": null,
