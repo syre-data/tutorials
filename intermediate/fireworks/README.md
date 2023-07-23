@@ -115,7 +115,7 @@ We want to get all the data with a `type` of **noise-data**, so we'll use `find_
 The `noise_data` variable should now hold a list with two elements. But why only two? We have six Assets with the `type` **noise-data** -- one in each batch.
 
 This is how some of Thot's automatic organization works. When running a script, it only has access to the Container it's running on and everything below it. It can't access anything above it or on the same level.
-(In fancy talk, a Thot project acts as a [**hierarchical database**](https://en.wikipedia.org/wiki/Hierarchical_database_model). This is what allows us to duplicate tree structures without needing to re-program anything.
+(In fancy talk, a Thot project acts as a [**hierarchical database**](/api#hierarchical-database). This is what allows us to duplicate tree structures without needing to re-program anything.
 Because we set the `dev_root` of the database to Recipe A, the `noise_data` variable should contain the noise data from both batches of Recipe A. But how can we verify this?
 
 #### Accessing metadata
