@@ -7,6 +7,8 @@ In these tutorials you'll learn some more advanced functions of the Desktop app,
 + Ideas
     - Analysis dependencies
     - Buckets
+    - Tags
++ Search and select using the desktop app (coming soon...)
 
 ## Prerequisites
 Before you begin, make sure you've completed the [intermediate tutorial](/intermediate).
