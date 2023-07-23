@@ -226,8 +226,8 @@ Assign the `recipe_histogram` script to the Recipe Containers and re-analyze the
 
 > Download the complete `recipe_histogram` script
 > 
-> [Python](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.py)
-> [R](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.r)
+> + [Python](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.py)
+> + [R](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.r)
 
 ## Adjusting workflows
 Oh no! It looks like there is an outlier in the data. How can we deal with this? 
