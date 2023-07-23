@@ -38,12 +38,12 @@ Amazing! It looks like the researchers actually did find a recipe that is quiete
 
 Let's write our own script to plot a histogram for all the trials in each recipe.
 <details>
-    <summary>Python</summary>
-    Create a file called <code>recipe_histogram.py</code>, and add it to the project.
+<summary>Python</summary>
+Create a file called <code>recipe_histogram.py</code>, and add it to the project.
 </details>
 <details>
-    <summary>R</summary>
-    Create a file called <code>recipe_histogram.r</code>, and add it to the project.
+<summary>R</summary>
+Create a file called <code>recipe_histogram.r</code>, and add it to the project.
 </details>
 
 > **Note**
@@ -55,24 +55,28 @@ Thot allows us to interact with our project from our scripts. This way we can ch
 Lets start by initializing the database for the script on our Recipe A Container.
 Add the following lines to your new analysis script.
 <details>
-    <summary>Python</summary>
+<summary>Python</summary>
 
-    # import libraries
-    import pandas as pd
-    import thot
+```python
+# import libraries
+import pandas as pd
+import thot
 
-    # initialize thot database
-    db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
+# initialize thot database
+db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
+```
 </details>
 <details>
-    <summary>R</summary>
+<summary>R</summary>
 
-    # import libraries
-    suppressPackageStartupMessages(library(tidyverse))
-    library(thot)
+```r
+# import libraries
+suppressPackageStartupMessages(library(tidyverse))
+library(thot)
 
-    # initialize thot database
-    db <- database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
+# initialize thot database
+db <- database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
+```
 </details>
 
 If you're using an interpreter you can now run these commands and interact with your project.
@@ -100,16 +104,20 @@ The first thing we want to do is get the actual data we will operate on. To do t
 
 We want to get all the data with a `type` of **noise-data**, so we'll use `find_assets`.
 <details>
-    <summary>Python</summary>
+<summary>Python</summary>
 
-    # find all data with type `noise-data` in the subtree
-    noise_data = db.find_assets(type="noise-data")
+```python
+# find all data with type `noise-data` in the subtree
+noise_data = db.find_assets(type="noise-data")
+```
 </details>
 <details>
-    <summary>R</summary>
+<summary>R</summary>
 
-    # find all data with type `noise-data` in the subtree
-    noise_data <- db |> find_assets(type="noise-data")
+```r
+# find all data with type `noise-data` in the subtree
+noise_data <- db |> find_assets(type="noise-data")
+```
 </details>
 
 The `noise_data` variable should now hold a list with two elements. But why only two? We have six Assets with the `type` **noise-data** -- one in each batch.
@@ -121,26 +129,32 @@ Because we set the `dev_root` of the database to Recipe A, the `noise_data` vari
 #### Accessing metadata
 For each recipe Container, we assigned the `recipe` metadata. Let's first ensure that our root Container has the correct metadata assigned to it. Run the command
 <details>
-    <summary>Python</summary>
+<summary>Python</summary>
 
-    db.root.metadata
+```python
+db.root.metadata
+```
 </details>
 <details>
-    <summary>R</summary>
+<summary>R</summary>
 
-    db@root$metadata
+```r
+db@root$metadata
+```
 </details>
 and you will see all the metadata assigned to the Recipe A Container. As you can see, metadata is stored in your languages verion of a dictionary or map. 
 
 Great! Our root Container has its `recipe` metadata set to **A**. But what about the noise data? We haven't assigned any metadata to it,so how can we tell our Batch 1 from our Batch 2 data? Let's take a look at the metadata for each of the Assets.
 <details>
-    <summary>Python</summary>
+<summary>Python</summary>
 
-    for data in noise_data:
-        print(data.metadata)
+```python
+for data in noise_data:
+    print(data.metadata)
+```
 </details>
 <details>
-    <summary>R</summary>
+<summary>R</summary>
 
 </details>
 
@@ -161,19 +175,21 @@ Now that we know we're operating on the correct data, let's actually plot it.
 
 In the `recipe_histogram` script add the following
 <details>
-    <summary>Python</summary>
+<summary>Python</summary>
 
-    # load data into dataframe
-    df = []
-    for data in noise_data:
-        tdf = pd.read_csv(data.file, index_col=0) # get file from Asset
-        tdf = tdf.rename(columns={"Volume [dB]": data.metadata["batch"]}) # rename columns by batch
-        df.append(tdf)
+```python
+# load data into dataframe
+df = []
+for data in noise_data:
+    tdf = pd.read_csv(data.file, index_col=0) # get file from Asset
+    tdf = tdf.rename(columns={"Volume [dB]": data.metadata["batch"]}) # rename columns by batch
+    df.append(tdf)
 
-    df = pd.concat(df, axis=1) # merge dataframes into one
+df = pd.concat(df, axis=1) # merge dataframes into one
+```
 </details>
 <details>
-    <summary>R</summary>
+<summary>R</summary>
 
 </details>
 There are two important things that we learned here:
@@ -186,13 +202,15 @@ These two ideas are what give Thot so much power, so it's worth thinking about h
 Time to see what this data looks like.
 In the `recipe_histogram` script add the following
 <details>
-    <summary>Python</summary>
+<summary>Python</summary>
 
-    # plot the data
-    ax = df.plot.hist(alpha=0.5)
+```python
+# plot the data
+ax = df.plot.hist(alpha=0.5)
+```
 </details>
 <details>
-    <summary>R</summary>
+<summary>R</summary>
 
 </details>
 
@@ -200,20 +218,22 @@ In the `recipe_histogram` script add the following
 Let's save the plot as a new Asset into our project.
 Add the following code to the `recipe_histogram` script.
 <details>
-    <summary>Python</summary>
+<summary>Python</summary>
 
-    # save plot
-    fig_path = db.add_asset(
-        "noise_data_histogram.png",
-        name="Noise Data Histogram",
-        tags=["figure"],
-        description="Histogram of noise data by batch."
-    )
+```python
+# save plot
+fig_path = db.add_asset(
+    "noise_data_histogram.png",
+    name="Noise Data Histogram",
+    tags=["figure"],
+    description="Histogram of noise data by batch."
+)
 
-    ax.get_figure().savefig(fig_path)
+ax.get_figure().savefig(fig_path)
+```
 </details>
 <details>
-    <summary>R</summary>
+<summary>R</summary>
 
 </details>
 
@@ -234,3 +254,7 @@ Oh no! It looks like there is an outlier in the data. How can we deal with this?
 We'll have to give our engineers a call to see what could have caused this.
 
 Check out the [advanced tutorial](/advanced) to resolve the issue.
+
+> Download the final project
+> + [Python](https://resources.thot.so/public/tutorials/intermediate/fireworks/completed_projects/fireworks_py.zip)
+> + [R](https://resources.thot.so/public/tutorials/intermediate/fireworks/completed_projects/fireworks_r.zip)
