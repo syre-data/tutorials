@@ -5,9 +5,11 @@ In these tutorials you'll learn some more advanced functions of the Desktop app,
 
 ## Concepts covered
 + Ideas
-    - Analysis dependencies
-    - Buckets
-    - Tags
+    - [Tags](fireworks/README.md#reorganizing-data)
+    - [Analysis dependencies](fireworks/README.md#analysis-dependencies)
+    - [Analysis autorun](fireworks/README.md#analysis-dependencies)
+    - [Buckets](fireworks/README.md#organizing-assets)
++ Filtering resources
 + Search and select using the desktop app (coming soon...)
 
 ## Prerequisites
