@@ -1,0 +1,43 @@
+{
+  "6dbc1b8a-9e3e-4761-ade0-cbb90c35dfa0": {
+    "rid": "6dbc1b8a-9e3e-4761-ade0-cbb90c35dfa0",
+    "properties": {
+      "created": "2023-07-29T09:41:03Z",
+      "creator": {
+        "User": {
+          "Id": "44a869a4-bbd4-4cb1-8d11-e0608d966878"
+        }
+      },
+      "name": "Recipe Comparison",
+      "kind": "recipe-bar-chart",
+      "description": null,
+      "tags": [
+        "chart",
+        "image"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "recipe_comparison.png"
+    }
+  },
+  "ecb43550-1881-41bd-b1a1-c40c86e02efb": {
+    "rid": "ecb43550-1881-41bd-b1a1-c40c86e02efb",
+    "properties": {
+      "created": "2023-07-29T09:41:03Z",
+      "creator": {
+        "User": {
+          "Id": "44a869a4-bbd4-4cb1-8d11-e0608d966878"
+        }
+      },
+      "name": "Recipe Comparison",
+      "kind": "recipe-comparison",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "recipe_comparison.csv"
+    }
+  }
+}

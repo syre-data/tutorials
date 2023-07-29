@@ -1,0 +1,66 @@
+[
+  {
+    "rid": "a5751a93-eaf3-4c0a-8fcc-453fce6ad874",
+    "path": {
+      "Relative": "noise_stats.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "900c526d-be2d-4ec8-aed7-3fb050511c56",
+    "created": "2023-04-28T12:25:43.641716Z"
+  },
+  {
+    "rid": "4cdc9816-871b-45d2-b40a-905bc361d8a8",
+    "path": {
+      "Relative": "recipe_histogram.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "44a869a4-bbd4-4cb1-8d11-e0608d966878",
+    "created": "2023-07-19T12:04:29.622426689Z"
+  },
+  {
+    "rid": "bbd92e8f-8f1d-480b-9634-0598192a5809",
+    "path": {
+      "Relative": "recipe_stats.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "900c526d-be2d-4ec8-aed7-3fb050511c56",
+    "created": "2023-04-28T12:25:43.654366Z"
+  },
+  {
+    "rid": "bbaf1606-fe7d-422b-97fd-fa8560f4babe",
+    "path": {
+      "Relative": "recipe_comparison.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "900c526d-be2d-4ec8-aed7-3fb050511c56",
+    "created": "2023-04-28T12:25:43.648490Z"
+  }
+]

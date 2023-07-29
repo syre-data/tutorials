@@ -43,7 +43,7 @@ Create a file called <code>recipe_histogram.py</code>, and add it to the project
 </details>
 <details>
 <summary>R</summary>
-Create a file called <code>recipe_histogram.r</code>, and add it to the project.
+Create a file called <code>recipe_histogram.R</code>, and add it to the project.
 </details>
 
 > **Note**
@@ -69,9 +69,10 @@ db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
 <details>
 <summary>R</summary>
 
-```r
+```R
 # import libraries
 suppressPackageStartupMessages(library(tidyverse))
+library(ggplot2)
 library(thot)
 
 # initialize thot database
@@ -89,7 +90,8 @@ Let's try it out by ensuring we are at the correct Container by printing out the
 <details>
     <summary>R</summary>
 
-    db@root$name
+    root <- db |> root()
+    root@name
 </details>
 You should see "Recipe A" printed out. 
 
@@ -114,7 +116,7 @@ noise_data = db.find_assets(type="noise-data")
 <details>
 <summary>R</summary>
 
-```r
+```R
 # find all data with type `noise-data` in the subtree
 noise_data <- db |> find_assets(type="noise-data")
 ```
@@ -122,9 +124,11 @@ noise_data <- db |> find_assets(type="noise-data")
 
 The `noise_data` variable should now hold a list with two elements. But why only two? We have six Assets with the `type` **noise-data** -- one in each batch.
 
-This is how some of Thot's automatic organization works. When running a script, it only has access to the Container it's running on and everything below it. It can't access anything above it or on the same level.
+When running a script, it only has access to the Container it's running on and everything below it. It can't access anything above it or on the same level.
 (In fancy talk, a Thot project acts as a [**hierarchical database**](/api#hierarchical-database). This is what allows us to duplicate tree structures without needing to re-program anything.
-Because we set the `dev_root` of the database to Recipe A, the `noise_data` variable should contain the noise data from both batches of Recipe A. But how can we verify this?
+Because we set the `dev_root` of the database to Recipe A, the `noise_data` variable only contains the noise data from the Recipe A batches. 
+
+Let's verify this.
 
 #### Accessing metadata
 For each recipe Container, we assigned the `recipe` metadata. Let's first ensure that our root Container has the correct metadata assigned to it. Run the command
@@ -138,13 +142,13 @@ db.root.metadata
 <details>
 <summary>R</summary>
 
-```r
-db@root$metadata
+```R
+root@metadata
 ```
 </details>
 and you will see all the metadata assigned to the Recipe A Container. As you can see, metadata is stored in your languages verion of a dictionary or map. 
 
-Great! Our root Container has its `recipe` metadata set to **A**. But what about the noise data? We haven't assigned any metadata to it,so how can we tell our Batch 1 from our Batch 2 data? Let's take a look at the metadata for each of the Assets.
+Great! Our root Container has its `recipe` metadata set to **A**. But what about the noise data? We haven't assigned any metadata to it, so how can we tell our Batch 1 from our Batch 2 data? Let's take a look at the metadata for each of the Assets.
 <details>
 <summary>Python</summary>
 
@@ -156,6 +160,11 @@ for data in noise_data:
 <details>
 <summary>R</summary>
 
+```R
+for (data in noise_data) {
+    print(data@metadata)
+}
+```
 </details>
 
 Woah! Our noise data has metadata attached to it even though we didn't assign any to it. This is because both Containers and Assets **inherit metadata** from their ancestors (Containers higher up in the tree). This way you don't need to copy-paste metadata everywhere. 
@@ -163,14 +172,14 @@ Woah! Our noise data has metadata attached to it even though we didn't assign an
 > **Note**
 > Metadata values are overwritten at lower levels if assigned at multiple levels.
 
-When using Thot there should be a single source of truth. That is, we should only have to label something in one place. If we change that label, that change should be automatically reflected everywhere.
-
 #### Using data
 Now that we know we're operating on the correct data, let's actually plot it.
 <details>
-    <summary>Thot's API sandwich</summary>
-    Thot uses a "sandwhich" model for its API, where Thot is the bread. Below you'll see how you start by using Thot to get the data you need from your project. You then do whatever analysis you want (the meat). Finally, you save any new data back into your project.
-    [Learn more](/api#sandwich-model)
+<summary>Thot's API sandwich</summary>
+
+Thot uses a "sandwich" model for its API, where Thot is the bread. Below you'll see how you start by using Thot to get the data you need from your project. You then do whatever analysis you want (the meat). Finally, you save any new data back into your project.
+
+[Learn more](/api#sandwich-model)
 </details>
 
 In the `recipe_histogram` script add the following
@@ -191,11 +200,30 @@ df = pd.concat(df, axis=1) # merge dataframes into one
 <details>
 <summary>R</summary>
 
+```R
+# load data into a dataframe
+volumes <- c()
+batches <- c()
+for (data in noise_data) {
+  tdf <- data@file |> read_csv(# get file from Asset
+    col_types = cols
+    (Trial = col_integer(),
+      "Volume [dB]" = col_double()))
+  
+  # store volume and batch
+  volumes <- c(volumes, tdf[["Volume [dB]"]])
+  batches <-
+    c(batches, rep(as.integer(data@metadata$batch), count(tdf)))
+}
+
+df <- tibble(volume = volumes, batch = batches)
+```
 </details>
+
 There are two important things that we learned here:
 
 1. Assets have a `file` property that stores the absolute path to the associated data file.
-2. We saw how we can use the metadata we assigned in the desktop app in our analysis scripts.
+2. Metadata we assigned in the desktop app is accessible in our analysis scripts.
 
 These two ideas are what give Thot so much power, so it's worth thinking about how you can use them in your own projects for a minute.
 
@@ -212,6 +240,13 @@ ax = df.plot.hist(alpha=0.5)
 <details>
 <summary>R</summary>
 
+```R
+# plot the data
+p <- ggplot(df, aes(x = volume, fill = factor(batch))) +
+  geom_histogram(position = "identity",
+                 alpha = 0.5,
+                 bins = 15)
+```
 </details>
 
 #### Creating Assets
@@ -235,6 +270,22 @@ ax.get_figure().savefig(fig_path)
 <details>
 <summary>R</summary>
 
+```R
+# save plot
+fig_path <- db |> add_asset(
+  "noise_data_histogram.png",
+  name = "Noise Data Histogram",
+  tags = list("figure"),
+  description = "Histogram of noise data by batch."
+)
+
+fig_path |> ggsave(
+  plot = p,
+  width = 10,
+  height = 6,
+  dpi = 300
+)
+```
 </details>
 
 > **Note**
@@ -247,7 +298,7 @@ Assign the `recipe_histogram` script to the Recipe Containers and re-analyze the
 > Download the complete `recipe_histogram` script
 > 
 > + [Python](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.py)
-> + [R](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.r)
+> + [R](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.R)
 
 ## Adjusting workflows
 Oh no! It looks like there is an outlier in the data. How can we deal with this? 

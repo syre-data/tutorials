@@ -1,0 +1,28 @@
+{
+  "rid": "665a5cd3-226c-4127-ba93-026363ba1cd3",
+  "properties": {
+    "created": "2023-04-28T12:20:19.613117Z",
+    "creator": {
+      "User": {
+        "Id": "900c526d-be2d-4ec8-aed7-3fb050511c56"
+      }
+    },
+    "name": "Recipe C",
+    "kind": "recipe",
+    "description": null,
+    "tags": [],
+    "metadata": {
+      "recipe": "C"
+    }
+  },
+  "scripts": {
+    "bbd92e8f-8f1d-480b-9634-0598192a5809": {
+      "autorun": true,
+      "priority": 0
+    },
+    "4cdc9816-871b-45d2-b40a-905bc361d8a8": {
+      "autorun": true,
+      "priority": 0
+    }
+  }
+}

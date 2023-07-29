@@ -1,0 +1,24 @@
+{
+  "rid": "6920e753-e9a1-40e3-9873-a6ccd65ca09c",
+  "properties": {
+    "created": "2023-04-28T12:20:36.671320Z",
+    "creator": {
+      "User": {
+        "Id": "900c526d-be2d-4ec8-aed7-3fb050511c56"
+      }
+    },
+    "name": "Batch 1",
+    "kind": "batch",
+    "description": null,
+    "tags": [],
+    "metadata": {
+      "batch": 1
+    }
+  },
+  "scripts": {
+    "a5751a93-eaf3-4c0a-8fcc-453fce6ad874": {
+      "autorun": true,
+      "priority": 0
+    }
+  }
+}
