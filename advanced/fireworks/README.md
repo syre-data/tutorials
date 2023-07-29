@@ -43,7 +43,7 @@ clean_df = df[df > 70].dropna()
 data_path = db.add_asset(
     "noise_data-cleaned.csv",
     name="Noise Data - Cleaned",
-    type="noise_data",
+    type="noise-data",
     tags=["cleaned"] # tag the data as cleaned for future reference
 )
 
@@ -60,7 +60,7 @@ But how do we tell Thot that the `noise_stats` Script needs to run after the `cl
 ### Analysis dependencies
 We can stack our analysis scripts like legos by using the **order** parameter. Within a Container, Scripts run from lowest order to highest (e.g. 0 then 1 then 2). Scripts with the same order run in parallel, and all scripts with a certain order will complete before moving to the next.
 
-Set the `clean_noise_data` Script's order to **1**.
+Set the `noise_stats` Script's order to **1**, leaving the `clean_noise_data` order at **0**.
 
 ![Setting a Script's priority](images/setting_priority.png)
 
