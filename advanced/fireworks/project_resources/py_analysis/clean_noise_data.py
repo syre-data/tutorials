@@ -7,7 +7,7 @@ db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe C/Ba
 
 # get data
 noise_data = db.find_asset(type="raw-data")
-df = pd.read_csv(noise_data.file, index_col=0);
+df = pd.read_csv(noise_data.file, index_col=0)
 
 # remove invalid data
 clean_df = df[df > 70].dropna()

@@ -1,0 +1,122 @@
+{
+  "a876fc6c-9863-49fa-9203-d88b6df5e7c5": {
+    "rid": "a876fc6c-9863-49fa-9203-d88b6df5e7c5",
+    "properties": {
+      "created": "2023-07-29T11:24:38Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Recipe A Statistics",
+      "kind": "recipe-stats",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "recipe-stats.pkl"
+    }
+  },
+  "32be301a-3641-42d6-b68d-fbc6557451a1": {
+    "rid": "32be301a-3641-42d6-b68d-fbc6557451a1",
+    "properties": {
+      "created": "2023-07-29T13:02:57Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "figs/norm_fit.png"
+    }
+  },
+  "86128208-108b-4ae9-ba4c-85ecc6100311": {
+    "rid": "86128208-108b-4ae9-ba4c-85ecc6100311",
+    "properties": {
+      "created": "2023-07-29T13:02:57Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "stats/describe_all.csv"
+    }
+  },
+  "8b0ddb45-43f0-4d67-b8d4-675649ee8a0d": {
+    "rid": "8b0ddb45-43f0-4d67-b8d4-675649ee8a0d",
+    "properties": {
+      "created": "2023-07-29T11:24:37Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Noise Data Histogram",
+      "kind": null,
+      "description": "Histogram of noise data by batch.",
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "noise_data_histogram.png"
+    }
+  },
+  "6a4d7bd9-5d45-4dd9-8984-005a5cb65468": {
+    "rid": "6a4d7bd9-5d45-4dd9-8984-005a5cb65468",
+    "properties": {
+      "created": "2023-07-29T13:02:57Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "figs/volume_by_trial.png"
+    }
+  },
+  "4cd8a985-51c3-4fc5-ad11-123fc2ada83e": {
+    "rid": "4cd8a985-51c3-4fc5-ad11-123fc2ada83e",
+    "properties": {
+      "created": "2023-07-29T13:02:57Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "stats/skew.csv"
+    }
+  }
+}

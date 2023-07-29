@@ -1,0 +1,122 @@
+{
+  "de74df11-1128-4156-ba49-883c28313581": {
+    "rid": "de74df11-1128-4156-ba49-883c28313581",
+    "properties": {
+      "created": "2023-07-29T15:22:58Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "figs/volume_by_trial.png"
+    }
+  },
+  "23dbd7da-3500-455e-b987-169d7873d987": {
+    "rid": "23dbd7da-3500-455e-b987-169d7873d987",
+    "properties": {
+      "created": "2023-07-29T15:23:00Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "stats/skew.csv"
+    }
+  },
+  "5d36b93c-7489-470f-a72e-92b89d44a711": {
+    "rid": "5d36b93c-7489-470f-a72e-92b89d44a711",
+    "properties": {
+      "created": "2023-07-29T13:47:47Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Noise Data Histogram",
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "noise_data_histogram.png"
+    }
+  },
+  "1f4f51c4-e27f-4625-a641-18934d1b74d5": {
+    "rid": "1f4f51c4-e27f-4625-a641-18934d1b74d5",
+    "properties": {
+      "created": "2023-07-29T13:47:50Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Recipe B Statistics",
+      "kind": "recipe-stats",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "recipe-stats.csv"
+    }
+  },
+  "b0663b97-2bf1-488f-8b7a-c017ad178b97": {
+    "rid": "b0663b97-2bf1-488f-8b7a-c017ad178b97",
+    "properties": {
+      "created": "2023-07-29T15:23:00Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "stats/describe_all.csv"
+    }
+  },
+  "8efeaf93-8d6c-476c-b9ce-f8421abedb4d": {
+    "rid": "8efeaf93-8d6c-476c-b9ce-f8421abedb4d",
+    "properties": {
+      "created": "2023-07-29T15:22:59Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "figs/norm_fit.png"
+    }
+  }
+}

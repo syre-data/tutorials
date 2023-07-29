@@ -54,4 +54,4 @@ We offer language bindings for the languages below, which are installed as you w
 We suggest you start with [beginner tutorials](beginner) which will get you familiar with the basics of the Thot desktop app.
 
 # Questions
-Feel free to reach out to us on our [Discord](https://discord.gg/Kv2c5XynfV), or send us an email at <info@thot.so>.
+Feel free to reach out to us on [our Discord](https://discord.gg/Kv2c5XynfV), or send us an email at <info@thot.so>.

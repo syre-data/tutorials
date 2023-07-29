@@ -1,0 +1,24 @@
+{
+  "rid": "7252822d-9517-47ac-a160-993feb334799",
+  "properties": {
+    "created": "2023-07-29T09:19:24.893749300Z",
+    "creator": {
+      "User": {
+        "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+      }
+    },
+    "name": "Batch 1",
+    "kind": "batch",
+    "description": null,
+    "tags": [],
+    "metadata": {
+      "batch": 1.0
+    }
+  },
+  "scripts": {
+    "ed561cf2-4ca3-448a-89ec-18d7629c89de": {
+      "autorun": false,
+      "priority": 0
+    }
+  }
+}

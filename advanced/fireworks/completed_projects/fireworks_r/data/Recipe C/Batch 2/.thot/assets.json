@@ -1,0 +1,61 @@
+{
+  "a36b83b2-33e0-48e5-a17e-336b1e2bfc88": {
+    "rid": "a36b83b2-33e0-48e5-a17e-336b1e2bfc88",
+    "properties": {
+      "created": "2023-07-29T13:18:53.821929100Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Noise Data",
+      "kind": "raw-data",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "c2-data.csv"
+    }
+  },
+  "b7a716b5-b081-4f17-8cb9-020ea26110c7": {
+    "rid": "b7a716b5-b081-4f17-8cb9-020ea26110c7",
+    "properties": {
+      "created": "2023-07-29T13:47:53Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Noise Data - Cleaned",
+      "kind": "noise-data",
+      "description": null,
+      "tags": [
+        "cleaned"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "noise_data-cleaned.csv"
+    }
+  },
+  "714476e1-e7dc-4bd3-bb70-d246d530b84f": {
+    "rid": "714476e1-e7dc-4bd3-bb70-d246d530b84f",
+    "properties": {
+      "created": "2023-07-29T13:47:55Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Noise Statistics",
+      "kind": "noise-stats",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "noise-stats.csv"
+    }
+  }
+}

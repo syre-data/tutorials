@@ -1,0 +1,15 @@
+{
+  "rid": "ac5576f0-0340-499c-a878-704d463bdf42",
+  "creator": {
+    "User": {
+      "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+    }
+  },
+  "created": "2023-07-29T13:05:41.668257200Z",
+  "name": "Fireworks | Adv. R",
+  "description": null,
+  "data_root": "data",
+  "universal_root": null,
+  "analysis_root": "analysis",
+  "meta_level": 0
+}

@@ -1,0 +1,122 @@
+{
+  "0b9b26e6-c169-4795-90cb-af49fcbb47e2": {
+    "rid": "0b9b26e6-c169-4795-90cb-af49fcbb47e2",
+    "properties": {
+      "created": "2023-07-29T11:24:41Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Noise Data Histogram",
+      "kind": null,
+      "description": "Histogram of noise data by batch.",
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "noise_data_histogram.png"
+    }
+  },
+  "8126fefe-d6b0-42d8-8cf9-bbd4f8e22826": {
+    "rid": "8126fefe-d6b0-42d8-8cf9-bbd4f8e22826",
+    "properties": {
+      "created": "2023-07-29T13:03:00Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "figs/volume_by_trial.png"
+    }
+  },
+  "268a13a0-436c-4638-89aa-d7df5e7c26e7": {
+    "rid": "268a13a0-436c-4638-89aa-d7df5e7c26e7",
+    "properties": {
+      "created": "2023-07-29T11:24:42Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Recipe B Statistics",
+      "kind": "recipe-stats",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "recipe-stats.pkl"
+    }
+  },
+  "c70ec9d4-747d-4bc6-ad97-0412408321c0": {
+    "rid": "c70ec9d4-747d-4bc6-ad97-0412408321c0",
+    "properties": {
+      "created": "2023-07-29T13:03:00Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "figs/norm_fit.png"
+    }
+  },
+  "7f93a42c-64cd-4c64-bab4-c4ce73b07f6c": {
+    "rid": "7f93a42c-64cd-4c64-bab4-c4ce73b07f6c",
+    "properties": {
+      "created": "2023-07-29T13:03:00Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "stats/describe_all.csv"
+    }
+  },
+  "06ffb89f-cd73-4646-8fee-53ea20b9d43d": {
+    "rid": "06ffb89f-cd73-4646-8fee-53ea20b9d43d",
+    "properties": {
+      "created": "2023-07-29T13:03:00Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "stats/skew.csv"
+    }
+  }
+}
