@@ -53,6 +53,9 @@ clean_df.to_csv(data_path)
 <details>
 <summary>R</summary>
 
+```R
+
+```
 </details>
 
 But how do we tell Thot that the `noise_stats` Script needs to run after the `clean_noise_data` Script?
@@ -66,7 +69,37 @@ Set the `clean_noise_data` Script's order to **1**.
 
 This allows us to keep our Scripts small and reuse them across projects.
 
+Before we analyze the project, we can save ourselves some time by telling Thot not to run analyses we know haven't changed.
+Select all the Recipe A and Recipe B Containers -- the Recipe and Batch Containers -- and uncheck the **autorun** boxes in the Scripts section.
+You can see which Scripts will run on the Containers by setting the preview to **Scripts** and checking the star icon.
+
+![Toggling a Script's autorun](images/toggle_autorun.png)
+
 Analyze the project, and look at the results.
 
 ## Buckets
+With all these caveats in our data, let's create some more advanced plots so we can really evaluate what is going on.
+
+Create a new script called `adv_recipe_stats` and add it to your project with the following contents
+
+<details>
+<summary>Python</summary>
+
+```python
+import pandas as pd
+import thot
+
+db = thot.Database(dev_root="/absolute/path/to/fireworks/data/Container A")
+
+noise_data = db.find_assets(type="noise-data")
+
+```
+</details>
+<details>
+<summary>R</summary>
+
+```R
+
+```
+</details>
 

@@ -5,16 +5,13 @@ In these tutorials you'll learn some more advanced functions of the Desktop app,
 
 ## Concepts covered
 + Ideas
-    - Hierarchical database
-    - Metadata inheritence
-    - Single source of truth
-    - Thot's "sandwhich" API
-+ Using the desktop app to
-    - Add new data and analysis
-    - Set up analysis dependencies
+    - [Hierarchical database](fireworks/README.md#finding-assets)
+    - [Metadata inheritence](fireworks/README.md#accessing-metadata)
+    - [Thot's "sandwhich" API](fireworks/README.md#using-data)
++ [Using the desktop app to add new data and analysis](fireworks/README.md#new-data)
 + Learning the Thot API
-    - Finding Containers and Assets
-    - Adding new Assets to the project
+    - [Finding Containers and Assets](fireworks/README.md#interacting-with-our-project)
+    - [Adding new Assets to the project](fireworks/README.md#creating-assets)
 
 ## Prerequisites
 Before you begin, make sure you've completed the [beginner tutorial](/beginner).
