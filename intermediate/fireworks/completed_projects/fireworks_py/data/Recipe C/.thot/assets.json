@@ -1,0 +1,42 @@
+{
+  "0a57e249-1cf6-483a-8bce-b6fe2b603695": {
+    "rid": "0a57e249-1cf6-483a-8bce-b6fe2b603695",
+    "properties": {
+      "created": "2023-07-29T09:40:59Z",
+      "creator": {
+        "User": {
+          "Id": "44a869a4-bbd4-4cb1-8d11-e0608d966878"
+        }
+      },
+      "name": "Recipe C Statistics",
+      "kind": "recipe-stats",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "recipe-stats.pkl"
+    }
+  },
+  "efa5fba7-5cf2-4e39-bada-ec3402a5cb5b": {
+    "rid": "efa5fba7-5cf2-4e39-bada-ec3402a5cb5b",
+    "properties": {
+      "created": "2023-07-29T09:41:00Z",
+      "creator": {
+        "User": {
+          "Id": "44a869a4-bbd4-4cb1-8d11-e0608d966878"
+        }
+      },
+      "name": "Noise Data Histogram",
+      "kind": null,
+      "description": "Histogram of noise data by batch.",
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "noise_data_histogram.png"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "6e1e0988-2c9c-4b0e-ae51-9df20f015d30": {
+    "rid": "6e1e0988-2c9c-4b0e-ae51-9df20f015d30",
+    "properties": {
+      "created": "2023-07-28T22:49:53Z",
+      "creator": {
+        "User": {
+          "Id": "44a869a4-bbd4-4cb1-8d11-e0608d966878"
+        }
+      },
+      "name": "Noise Data Histogram",
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "noise_data_histogram.png"
+    }
+  },
+  "267bec8a-5ad3-4f0c-9cbb-4eaa29917380": {
+    "rid": "267bec8a-5ad3-4f0c-9cbb-4eaa29917380",
+    "properties": {
+      "created": "2023-07-28T20:47:24Z",
+      "creator": {
+        "User": {
+          "Id": "44a869a4-bbd4-4cb1-8d11-e0608d966878"
+        }
+      },
+      "name": "Recipe B Statistics",
+      "kind": "recipe-stats",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "recipe-stats.csv"
+    }
+  }
+}

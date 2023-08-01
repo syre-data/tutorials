@@ -1,0 +1,28 @@
+{
+  "rid": "f863fbb3-c5d3-4b3c-81e0-1c8d0ab5e83b",
+  "properties": {
+    "created": "2023-07-28T20:27:47.750043052Z",
+    "creator": {
+      "User": {
+        "Id": "44a869a4-bbd4-4cb1-8d11-e0608d966878"
+      }
+    },
+    "name": "Recipe B",
+    "kind": "recipe",
+    "description": null,
+    "tags": [],
+    "metadata": {
+      "recipe": "B"
+    }
+  },
+  "scripts": {
+    "f115e018-a951-4bda-b866-66a7d45b6ad1": {
+      "autorun": true,
+      "priority": 0
+    },
+    "4b49d877-d839-4516-944a-7e109d165ae8": {
+      "autorun": false,
+      "priority": 0
+    }
+  }
+}

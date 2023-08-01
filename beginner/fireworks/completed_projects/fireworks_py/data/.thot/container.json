@@ -1,20 +1,20 @@
 {
-  "rid": "7d6203fe-f01c-479a-95fa-7778761a7019",
+  "rid": "51579ab6-8765-4301-8e62-9905c8f29517",
   "properties": {
-    "created": "2023-04-28T12:19:56.928229Z",
+    "created": "2023-07-20T09:04:48.739135100Z",
     "creator": {
       "User": {
-        "Id": "900c526d-be2d-4ec8-aed7-3fb050511c56"
+        "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
       }
     },
-    "name": "Fireworks",
-    "kind": null,
+    "name": "Silent Fireworks",
+    "kind": "project",
     "description": null,
     "tags": [],
     "metadata": {}
   },
   "scripts": {
-    "bbaf1606-fe7d-422b-97fd-fa8560f4babe": {
+    "fbdae178-dd00-4f2d-b997-1bb5dbf16122": {
       "autorun": true,
       "priority": 0
     }

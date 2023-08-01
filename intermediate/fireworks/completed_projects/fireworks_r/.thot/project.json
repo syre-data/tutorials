@@ -1,0 +1,15 @@
+{
+  "rid": "3b2787fd-b681-47c5-a110-d0dbf57e2a9f",
+  "creator": {
+    "User": {
+      "Id": "44a869a4-bbd4-4cb1-8d11-e0608d966878"
+    }
+  },
+  "created": "2023-07-28T20:27:23.711606318Z",
+  "name": "Fireworks | Int. R",
+  "description": null,
+  "data_root": "data",
+  "universal_root": null,
+  "analysis_root": "analysis",
+  "meta_level": 0
+}

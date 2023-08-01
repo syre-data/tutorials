@@ -1,1 +1,21 @@
-{}
+{
+  "de1d6f19-f8ac-48db-8bd5-d60285c317a6": {
+    "rid": "de1d6f19-f8ac-48db-8bd5-d60285c317a6",
+    "properties": {
+      "created": "2023-07-20T11:10:19Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Recipe A Statistics",
+      "kind": "recipe-stats",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "recipe-stats.pkl"
+    }
+  }
+}

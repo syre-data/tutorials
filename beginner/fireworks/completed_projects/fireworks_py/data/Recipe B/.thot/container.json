@@ -1,10 +1,10 @@
 {
-  "rid": "6a964c1e-602b-4840-a8e8-8659fcaa8ee6",
+  "rid": "0b239344-e96f-45cc-9853-c87a76fc0179",
   "properties": {
-    "created": "2023-04-28T12:20:19.613117Z",
+    "created": "2023-07-20T09:05:05.355510900Z",
     "creator": {
       "User": {
-        "Id": "900c526d-be2d-4ec8-aed7-3fb050511c56"
+        "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
       }
     },
     "name": "Recipe B",
@@ -16,7 +16,7 @@
     }
   },
   "scripts": {
-    "bbd92e8f-8f1d-480b-9634-0598192a5809": {
+    "a573aef6-cefa-45bd-a7b1-02b1705faece": {
       "autorun": true,
       "priority": 0
     }

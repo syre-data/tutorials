@@ -1,0 +1,66 @@
+[
+  {
+    "rid": "f115e018-a951-4bda-b866-66a7d45b6ad1",
+    "path": {
+      "Relative": "recipe_histogram.R"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "R",
+      "cmd": "Rscript",
+      "args": [],
+      "env": {}
+    },
+    "creator": "44a869a4-bbd4-4cb1-8d11-e0608d966878",
+    "created": "2023-07-28T20:55:12.421501790Z"
+  },
+  {
+    "rid": "4b49d877-d839-4516-944a-7e109d165ae8",
+    "path": {
+      "Relative": "recipe_stats.R"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "R",
+      "cmd": "Rscript",
+      "args": [],
+      "env": {}
+    },
+    "creator": "44a869a4-bbd4-4cb1-8d11-e0608d966878",
+    "created": "2023-07-28T20:33:25.722078753Z"
+  },
+  {
+    "rid": "f4172a0c-80d0-4a69-b4f0-a5e100ccf516",
+    "path": {
+      "Relative": "noise_stats.R"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "R",
+      "cmd": "Rscript",
+      "args": [],
+      "env": {}
+    },
+    "creator": "44a869a4-bbd4-4cb1-8d11-e0608d966878",
+    "created": "2023-07-28T20:33:25.755972974Z"
+  },
+  {
+    "rid": "c7fe6d37-5feb-4a2e-b4f3-f39a113bd2f1",
+    "path": {
+      "Relative": "recipe_comparison.R"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "R",
+      "cmd": "Rscript",
+      "args": [],
+      "env": {}
+    },
+    "creator": "44a869a4-bbd4-4cb1-8d11-e0608d966878",
+    "created": "2023-07-28T20:33:25.777338487Z"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "rid": "986bc5cf-df33-43b6-8cd7-9a12b6389db4",
+  "properties": {
+    "created": "2023-07-28T20:27:23.731671544Z",
+    "creator": {
+      "User": {
+        "Id": "44a869a4-bbd4-4cb1-8d11-e0608d966878"
+      }
+    },
+    "name": "Silent Fireworks",
+    "kind": "project",
+    "description": null,
+    "tags": [],
+    "metadata": {}
+  },
+  "scripts": {
+    "c7fe6d37-5feb-4a2e-b4f3-f39a113bd2f1": {
+      "autorun": false,
+      "priority": 0
+    }
+  }
+}

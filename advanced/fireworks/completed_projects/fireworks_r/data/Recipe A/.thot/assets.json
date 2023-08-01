@@ -1,0 +1,122 @@
+{
+  "77b0e4c4-a102-4e59-ae66-b58f132dd008": {
+    "rid": "77b0e4c4-a102-4e59-ae66-b58f132dd008",
+    "properties": {
+      "created": "2023-07-29T13:47:40Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Recipe A Statistics",
+      "kind": "recipe-stats",
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "recipe-stats.csv"
+    }
+  },
+  "50444ea7-1cbf-448c-8584-45f88c041956": {
+    "rid": "50444ea7-1cbf-448c-8584-45f88c041956",
+    "properties": {
+      "created": "2023-07-29T15:23:27Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "figs/volume_by_trial.png"
+    }
+  },
+  "39025212-c92b-41ae-b3ae-3843b992b3fe": {
+    "rid": "39025212-c92b-41ae-b3ae-3843b992b3fe",
+    "properties": {
+      "created": "2023-07-29T15:23:28Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "stats/skew.csv"
+    }
+  },
+  "67429fac-c4ed-4bed-b007-010ee617c16b": {
+    "rid": "67429fac-c4ed-4bed-b007-010ee617c16b",
+    "properties": {
+      "created": "2023-07-29T15:23:28Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "stats/describe_all.csv"
+    }
+  },
+  "9ba83fba-2315-4beb-9e6f-7a3725916841": {
+    "rid": "9ba83fba-2315-4beb-9e6f-7a3725916841",
+    "properties": {
+      "created": "2023-07-29T13:47:42Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": "Noise Data Histogram",
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "noise_data_histogram.png"
+    }
+  },
+  "764193e0-f2a8-422d-ae51-402369b41457": {
+    "rid": "764193e0-f2a8-422d-ae51-402369b41457",
+    "properties": {
+      "created": "2023-07-29T15:23:28Z",
+      "creator": {
+        "User": {
+          "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+        }
+      },
+      "name": null,
+      "kind": null,
+      "description": null,
+      "tags": [
+        "figure"
+      ],
+      "metadata": {}
+    },
+    "path": {
+      "Relative": "figs/norm_fit.png"
+    }
+  }
+}

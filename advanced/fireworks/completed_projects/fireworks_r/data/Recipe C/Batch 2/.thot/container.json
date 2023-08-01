@@ -1,0 +1,28 @@
+{
+  "rid": "9d161cd7-1dc4-4440-adb7-a0306314f38b",
+  "properties": {
+    "created": "2023-07-29T13:06:20.398505500Z",
+    "creator": {
+      "User": {
+        "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+      }
+    },
+    "name": "Batch 2",
+    "kind": "batch",
+    "description": null,
+    "tags": [],
+    "metadata": {
+      "batch": 2
+    }
+  },
+  "scripts": {
+    "2b65fafa-f202-4c82-b7a6-97261d0b0c2c": {
+      "autorun": false,
+      "priority": 1
+    },
+    "6792cd6f-48e4-4424-822a-9e4b020a24a5": {
+      "autorun": false,
+      "priority": 0
+    }
+  }
+}

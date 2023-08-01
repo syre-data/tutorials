@@ -88,6 +88,7 @@ Repeat this for Batch 2.
 
 Great! We've now created our `Recipe A` branch.
 
+#### Duplicating subtrees
 `Recipe B` will have the exact same structure with only the name of the recipe Container changed. Let's save ourselves some work by duplicating the `Recipe A` tree and changing the required information.
 
 Hover over the kebab (three dot) menu in the upper right corner of the `Recipe A` Container and select `Duplicate tree`.

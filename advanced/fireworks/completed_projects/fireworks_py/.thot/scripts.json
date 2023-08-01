@@ -1,0 +1,98 @@
+[
+  {
+    "rid": "3bf28e14-a404-446f-ae08-b2667f484833",
+    "path": {
+      "Relative": "recipe_comparison.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "5ec96e04-eec5-4546-8953-ed3796a70c80",
+    "created": "2023-07-29T09:20:43.143203600Z"
+  },
+  {
+    "rid": "021d2bd3-5222-4819-93fb-db0f405c0268",
+    "path": {
+      "Relative": "clean_noise_data.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "5ec96e04-eec5-4546-8953-ed3796a70c80",
+    "created": "2023-07-29T09:27:05.048145600Z"
+  },
+  {
+    "rid": "ed561cf2-4ca3-448a-89ec-18d7629c89de",
+    "path": {
+      "Relative": "noise_stats.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "5ec96e04-eec5-4546-8953-ed3796a70c80",
+    "created": "2023-07-29T09:20:43.125039700Z"
+  },
+  {
+    "rid": "ae0e2917-967d-46fb-ac82-5068b4709509",
+    "path": {
+      "Relative": "recipe_histogram.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "5ec96e04-eec5-4546-8953-ed3796a70c80",
+    "created": "2023-07-29T09:20:43.105078400Z"
+  },
+  {
+    "rid": "fdad36f7-c07e-48ac-9b06-eb9d00487032",
+    "path": {
+      "Relative": "adv_recipe_stats.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "5ec96e04-eec5-4546-8953-ed3796a70c80",
+    "created": "2023-07-29T10:01:44.788156800Z"
+  },
+  {
+    "rid": "f45a95f9-9e37-44cc-a9b7-856db9c8ad13",
+    "path": {
+      "Relative": "recipe_stats.py"
+    },
+    "name": null,
+    "description": null,
+    "env": {
+      "language": "Python",
+      "cmd": "python3",
+      "args": [],
+      "env": {}
+    },
+    "creator": "5ec96e04-eec5-4546-8953-ed3796a70c80",
+    "created": "2023-07-29T09:20:43.082085300Z"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "rid": "13526c21-e3c4-436d-9622-fcbc6cbe807a",
+  "creator": {
+    "User": {
+      "Id": "5ec96e04-eec5-4546-8953-ed3796a70c80"
+    }
+  },
+  "created": "2023-07-29T09:18:44.991031500Z",
+  "name": "Fireworks | Adv. Python",
+  "description": null,
+  "data_root": "data",
+  "universal_root": null,
+  "analysis_root": "analysis",
+  "meta_level": 0
+}

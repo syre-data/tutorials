@@ -1,0 +1,20 @@
+{
+  "local_format_version": "0.10.0",
+  "permissions": {
+    "44a869a4-bbd4-4cb1-8d11-e0608d966878": {
+      "read": true,
+      "write": true,
+      "execute": true
+    },
+    "900c526d-be2d-4ec8-aed7-3fb050511c56": {
+      "read": true,
+      "write": true,
+      "execute": true
+    },
+    "e1eec471-a137-49a6-b39b-21943a5bb23f": {
+      "read": true,
+      "write": true,
+      "execute": true
+    }
+  }
+}
