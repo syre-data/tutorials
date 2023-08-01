@@ -79,7 +79,7 @@ for asset in raw_assets:
 # ----------------
 # --- ANALYSIS ---
 # ----------------
-analyized_data = analyze_data(raw_data)
+analyzed_data = analyze_data(raw_data)
 
 # create new asset for analyzed data and save to file
 analyzed_data_path = db.add_asset(
