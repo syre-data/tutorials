@@ -80,8 +80,13 @@ db <- database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
 ```
 </details>
 
-If you're using an interpreter you can now run these commands and interact with your project.
-Let's try it out by ensuring we are at the correct Container by printing out the name of the root Container of the database.
+Let's also run these commands in an interpreter so we can interact with our project.
+To ensure we are at the correct Container we can print out the name of the root Container of the database.
+
+> **Note**
+> Code with a :mortar_board: above it is meant to be run in the interpreter only, not saved into the analysis file.
+
+:mortar_board:
 <details>
     <summary>Python</summary>
     
@@ -93,6 +98,7 @@ Let's try it out by ensuring we are at the correct Container by printing out the
     root <- db |> root()
     root@name
 </details>
+
 You should see "Recipe A" printed out. 
 
 > **Note**
@@ -104,7 +110,7 @@ The first thing we want to do is get the actual data we will operate on. To do t
 + **`find_asset`:** Finds a single Asset matching the provided filter, returning the `None` type for the language if no matches are found. If multiple matches are found, a random one is returned.
 + **`find_assets`:** Finds multiple Assets matching the filter as a `list` in the given language.
 
-We want to get all the data with a `type` of **noise-data**, so we'll use `find_assets`.
+We want to get all the data with a `type` of **noise-data**, so we'll use `find_assets`. Add the following to the script, and run it in an interpreter.
 <details>
 <summary>Python</summary>
 
@@ -132,6 +138,8 @@ Let's verify this.
 
 #### Accessing metadata
 For each recipe Container, we assigned the `recipe` metadata. Let's first ensure that our root Container has the correct metadata assigned to it. Run the command
+
+:mortar_board:
 <details>
 <summary>Python</summary>
 
@@ -146,9 +154,14 @@ db.root.metadata
 root@metadata
 ```
 </details>
+
 and you will see all the metadata assigned to the Recipe A Container. As you can see, metadata is stored in your languages verion of a dictionary or map. 
 
 Great! Our root Container has its `recipe` metadata set to **A**. But what about the noise data? We haven't assigned any metadata to it, so how can we tell our Batch 1 from our Batch 2 data? Let's take a look at the metadata for each of the Assets.
+
+In the interpreter run
+
+:mortar_board:
 <details>
 <summary>Python</summary>
 

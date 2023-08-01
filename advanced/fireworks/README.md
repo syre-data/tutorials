@@ -2,11 +2,11 @@
 > :clock9: **10 minutes**
 
 > **Note**
-> This project depends on the [intermediate fireworks tutorial project](/beginner/fireworks).
+> This project depends on the [intermediate fireworks tutorial project](/intermediate/fireworks).
 > If you don't have it, you can [download it](/intermediate/fireworks#adjusting-workflows) at the bottom of that tutorial.
 
 ## Before we begin
-The scripts in this tutorial rely on additional libraries. Ensure they are install before beginning.
+The scripts in this tutorial rely on additional libraries. Ensure they are installed before beginning.
 <details>
 <summary>Python</summary>
 
@@ -282,6 +282,10 @@ Let's explore the results! You can preview the new Assets we created in the desk
 
 ## Which is the best recipe?
 What do you think we shall tell Mr. Puzzle's? If you need more info on which is the best recipe, try making your own analysis script from scratch!
+
+> Download the final project
+> + [Python](https://resources.thot.so/public/tutorials/advanced/fireworks/completed_projects/fireworks_py.zip)
+> + [R](https://resources.thot.so/public/tutorials/advanced/fireworks/completed_projects/fireworks_r.zip)
 
 # Congratulations!
 You've made it through all the tuorials! Now it's time to start using Thot on your own projects.
