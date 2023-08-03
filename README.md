@@ -32,22 +32,26 @@ We offer language bindings for the languages below, which are installed as you w
 (If you don't see your favorite language, let us know!)
 
 <details>
-    <summary>Python</summary>
-    <a href="https://releases.thot.so/public/manual/api_bindings/thot_data-0.10.0-py.tar.gz"
-        target="_blank">
-        Python download
-    </a>
+<summary>Python</summary>
+<a href="https://releases.thot.so/public/manual/api_bindings/thot_data-0.10.0-py.tar.gz"
+    target="_blank">
+    Download Python package
+</a>
 
-    pip install <path/to/thot_data-0.10.0-py.tar.gz>
+```bash
+pip install <path/to/thot_data-0.10.0-py.tar.gz>
+```
 </details>
 <details>
-    <summary>R</summary>
-    <a href="https://releases.thot.so/public/manual/api_bindings/thot_0.10.0-r.tar.gz"
-        targe="_blank">
-        R download
-    </a>
+<summary>R</summary>
+<a href="https://releases.thot.so/public/manual/api_bindings/thot_0.10.0-r.tar.gz"
+    targe="_blank">
+    Download R package
+</a>
 
-    install.packages("path/to/thot_0.10.0-r.tar.gz", repos=NULL, type=“source”)
+```bash
+install.packages("path/to/thot_0.10.0-r.tar.gz", repos=NULL, type="source")
+```
 </details>
 
 # Get started
