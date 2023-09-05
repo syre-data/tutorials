@@ -16,7 +16,7 @@ The brilliant chemists in Puzzle's R&D department have just sent you a message
 > We just came up with a new recipe for Famous Dave's show, but aren't sure if it's better or worse.
 > 
 > Here is the data:
-> [Recipe C data](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/data.zip)
+> [Recipe C data](https://resources.thot.so/downloads/tutorials/intermediate/fireworks/project_resources/data.zip)
 >
 > Can you help us?
 
@@ -310,8 +310,8 @@ Assign the `recipe_histogram` script to the Recipe Containers and re-analyze the
 
 > Download the complete `recipe_histogram` script
 > 
-> + [Python](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.py)
-> + [R](https://resources.thot.so/public/tutorials/intermediate/fireworks/project_resources/recipe_histogram.R)
+> + [Python](https://resources.thot.so/downloads/tutorials/intermediate/fireworks/project_resources/recipe_histogram.py)
+> + [R](https://resources.thot.so/downloads/tutorials/intermediate/fireworks/project_resources/recipe_histogram.R)
 
 ## Adjusting workflows
 Oh no! It looks like there is an outlier in the data. How can we deal with this? 
@@ -320,5 +320,5 @@ We'll have to give our engineers a call to see what could have caused this.
 Check out the [advanced tutorial](/advanced) to resolve the issue.
 
 > Download the final project
-> + [Python](https://resources.thot.so/public/tutorials/intermediate/fireworks/completed_projects/fireworks_py.zip)
-> + [R](https://resources.thot.so/public/tutorials/intermediate/fireworks/completed_projects/fireworks_r.zip)
+> + [Python](https://resources.thot.so/downloads/tutorials/intermediate/fireworks/completed_projects/fireworks_py.zip)
+> + [R](https://resources.thot.so/downloads/tutorials/intermediate/fireworks/completed_projects/fireworks_r.zip)

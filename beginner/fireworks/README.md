@@ -103,7 +103,7 @@ Great! Our project's structure is now complete, and we can start adding data to 
 Now that we have our tree, we can add data. Most often data is added to the lowest level Containers because these are the individual/samples/spicimens we actually run experiments on.
 In Thot, any data file -- CSV, text, images, binary, anything -- is called an **Asset**.
 
-> [Download the data](https://resources.thot.so/public/tutorials/beginner/fireworks/project_resources/data.zip)
+> [Download the data](https://resources.thot.so/downloads/tutorials/beginner/fireworks/project_resources/data.zip)
 
 Adding data to a Container is as simple as Drag-and-dropping the file on it. For each of the batches, add the respective data. (e.g. Drop `a1-data.csv` on the `Recipe A > Batch 1` Container.) You'll see the Assets appear in the preview as you add them.
 
@@ -126,8 +126,8 @@ Analysis of a Thot project starts at the bottom most level of the project tree a
 
 > **Download the analysis scripts**
 >
-> + [Python](https://resources.thot.so/public/tutorials/beginner/fireworks/project_resources/py_analysis.zip)
-> + [R](https://resources.thot.so/public/tutorials/beginner/fireworks/project_resources/r_analysis.zip)
+> + [Python](https://resources.thot.so/downloads/tutorials/beginner/fireworks/project_resources/py_analysis.zip)
+> + [R](https://resources.thot.so/downloads/tutorials/beginner/fireworks/project_resources/r_analysis.zip)
 
 > **Note**
 > Thot exposes a simple interface that wraps around the actual analysis that you do in your scripts. We cover this in the [intermediate tutorials](/intermediate), but encourage you to open the provided analysis files and take a look for yourself. The longest is 20 lines of code with comments explaining each line.
@@ -167,8 +167,8 @@ Open the root Container's kebab (three dot) menu and click the **Open folder** a
 
 > **Download the final project**
 >
-> + [Python](https://resources.thot.so/public/tutorials/beginner/fireworks/completed_projects/fireworks_py.zip)
-> + [R](https://resources.thot.so/public/tutorials/beginner/fireworks/completed_projects/fireworks_r.zip)
+> + [Python](https://resources.thot.so/downloads/tutorials/beginner/fireworks/completed_projects/fireworks_py.zip)
+> + [R](https://resources.thot.so/downloads/tutorials/beginner/fireworks/completed_projects/fireworks_r.zip)
 
 ## What next?
 The R+D team have just created a new recipe! We'll need to add it to our current project so we can compare it with the current results, and also create our own analysis script.

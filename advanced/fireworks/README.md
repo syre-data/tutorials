@@ -284,8 +284,8 @@ Let's explore the results! You can preview the new Assets we created in the desk
 What do you think we shall tell Mr. Puzzle's? If you need more info on which is the best recipe, try making your own analysis script from scratch!
 
 > Download the final project
-> + [Python](https://resources.thot.so/public/tutorials/advanced/fireworks/completed_projects/fireworks_py.zip)
-> + [R](https://resources.thot.so/public/tutorials/advanced/fireworks/completed_projects/fireworks_r.zip)
+> + [Python](https://resources.thot.so/downloads/tutorials/advanced/fireworks/completed_projects/fireworks_py.zip)
+> + [R](https://resources.thot.so/downloads/tutorials/advanced/fireworks/completed_projects/fireworks_r.zip)
 
 # Congratulations!
 You've made it through all the tuorials! Now it's time to start using Thot on your own projects.
