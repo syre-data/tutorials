@@ -38,7 +38,9 @@ We offer language bindings for the languages below, which are installed as you w
         Python download
     </a>
 
-    pip install <path/to/thot_data-0.10.0-py.tar.gz>
+```bash
+pip install <path/to/thot_data-0.10.0-py.tar.gz>
+```
 </details>
 <details>
     <summary>R</summary>
@@ -47,7 +49,9 @@ We offer language bindings for the languages below, which are installed as you w
         R download
     </a>
 
-    install.packages("path/to/thot_0.10.0-r.tar.gz", repos=NULL, type=“source”)
+```bash
+install.packages("path/to/thot_0.10.0-r.tar.gz", repos=NULL, type="source")
+```
 </details>
 
 # Get started
