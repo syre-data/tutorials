@@ -28,6 +28,7 @@ Installing the app should be the same as installing any other application for yo
 ## Language bindings
 Next, you'll need to install the language bindings for your analysis scripts.
 We offer language bindings for the languages below, which are installed as you would for any other package.
+Click on the language you want for the download and install instructions.
 
 (If you don't see your favorite language, let us know!)
 
@@ -35,9 +36,10 @@ We offer language bindings for the languages below, which are installed as you w
 <summary>Python</summary>
 <a href="https://releases.thot.so/download/api_bindings/thot_data-0.10.0-py.tar.gz"
     target="_blank">
-    Python download
+    Download Python package
 </a>
 
+In your terminal
 ```bash
 pip install <path/to/thot_data-0.10.0-py.tar.gz>
 ```
@@ -46,9 +48,10 @@ pip install <path/to/thot_data-0.10.0-py.tar.gz>
 <summary>R</summary>
 <a href="https://releases.thot.so/download/api_bindings/thot_0.10.0-r.tar.gz"
     targe="_blank">
-    R download
+    Download R package
 </a>
 
+In your terminal
 ```bash
 install.packages("path/to/thot_0.10.0-r.tar.gz", repos=NULL, type="source")
 ```

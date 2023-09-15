@@ -23,6 +23,9 @@ Let's start up the desktop app. If this is your first time running it, you'll fi
 
 If you don't have any projects created yet, click on the **Create your first project** button (otherwise click on the **New** button). You'll be asked to select the folder to place the project in. Let's call this one `silent_fireworks`. Each Thot project is contained in its own folder where all the resources for that project are organized.
 
+> **Note**
+> On Mac you must create your project folder from Finder before selecting it as the project folder.
+
 Once you create the project, you will be taken to the project canvas.
 
 ## Structuring your project
@@ -37,7 +40,7 @@ Our researchers have already recorded the data and written the analysis scripts 
 Because of our short time frame to get this done, we'll build this project quick and dirty, using the most common features of Thot's dersktop app.
 
 ### Setting up your project tree
-Let's start by annotating our the root **Container** by clicking on it. This will open the properties widget. Enter the following information (leaving the rest blank).
+Let's start by annotating the root **Container** by clicking on it. This will open the properties widget. Enter the following information (leaving the rest blank).
 
 |     |     |
 | --- | --- |
@@ -47,7 +50,10 @@ Let's start by annotating our the root **Container** by clicking on it. This wil
 
 ![Setting the root Container's properties.](images/root_container_properties.png)
 
-Great! We just edited our first Container. What do Containers do? Well, they Contain things. Namely, they can contain other Containers, Assets, and Script Associations. We'll get to the Assets and Script Associations later on.
+> **Note**
+> Properties are case-sensitive.
+
+Great! We just edited our first Container. What do Containers do? Well, they contain things. Namely, they can contain other Containers, Assets, and Script Associations. We'll get to the Assets and Script Associations later on.
 
 #### Adding a child
 Let's add our first child Container for Recipe A. You probably noticed the plus icon that appears when you hovered over the root Container. Go ahead and give it a click. This will open the **Add child** dialog. Let's name the child Container **Recipe A**. After creating it, give it a `type` of **recipe**.
@@ -95,7 +101,7 @@ Hover over the kebab (three dot) menu in the upper right corner of the `Recipe A
 
 ![Duplicating a tree](images/duplicate_tree.png)
 
-Click on the newly created `Recipe A (Copy)` Container to open its properties widget and change its name to `Recipe B`.
+Click on the newly created `Recipe A (Copy)` Container to open its properties widget and change its name to `Recipe B` and its `recipe` metadata to `B`.
 
 Great! Our project's structure is now complete, and we can start adding data to it.
 
@@ -108,7 +114,7 @@ In Thot, any data file -- CSV, text, images, binary, anything -- is called an **
 Adding data to a Container is as simple as Drag-and-dropping the file on it. For each of the batches, add the respective data. (e.g. Drop `a1-data.csv` on the `Recipe A > Batch 1` Container.) You'll see the Assets appear in the preview as you add them.
 
 ### Bulk editing
-Let's edit the names of Assets to make them more descriptive. <kbd>Shift</kbd> + click on each of the newly add files. This opens the `Bulk Editing` widget. Using this same technique you can select multiple Containers as well, or a mix of Containers and Assets.
+Let's edit the names of Assets to make them more descriptive. First, click off any of the resources to de-select everything, then <kbd>Shift</kbd> + click on each of the newly add files. This opens the `Bulk Editing` widget (it looks almost the same as the normal properties widget). Using this same technique you can select multiple Containers as well, or a mix of Containers and Assets.
 
 ![Bulk edit menu](images/bulk_edit.png)
 
