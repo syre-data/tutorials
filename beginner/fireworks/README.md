@@ -243,6 +243,6 @@ Unfortunately, Mr. Puzzle is a bit of an old timer, and hasn't yet adopted Thot 
 ## What next?
 The R+D team have just created a new recipe! We'll need to add it to our current project so we can compare it with the current results, and also create our own analysis script.
 
-If you're ready for your next challenge head to the [intermediate tutorial](/intermediate), or play around with the current project yourself.
+If you're ready for your next challenge head to the [intermediate tutorial](/intermediate#readme), or play around with the current project yourself.
 
-**[>> Next tutorial >>](/intermediate/README.md)**
+**[>> Next tutorial >>](/intermediate#readme)**

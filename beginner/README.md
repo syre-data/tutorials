@@ -24,7 +24,7 @@ Before you begin, make sure you've [installed](/README.md#Install) the Thot desk
 ## Get started
 It's finally time to get started using Thot!
 
-**[Puzzle's Fireworks](fireworks/README.md):** You've just graduated university and have the amazing opportunity to work for a local fireworks company.
+**[Puzzle's Fireworks](fireworks#readme):** You've just graduated university and have the amazing opportunity to work for a local fireworks company.
 Your first task is to figure out which of two fireworks recipes is quieter.
 
-**[>> Start the tutorial >>](fireworks/README.md)**
+**[>> Start the tutorial >>](fireworks#readme)**

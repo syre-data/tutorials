@@ -5,11 +5,11 @@ These projects are designed to help you learn and explore the features of Thot.
 
 **Each tutorial only takes 15 minutes**, so you can get up and running quickly, and learn in bite sized chunks.
 
-+ **[Beginner](beginner):** Learn the basics of the Thot desktop app by building and analyzing your first project.
-+ **[Intermediate](intermediate):** Learn some more advanced features of the desktop app, and start coding your own analysis using
++ **[Beginner](beginner#readme):** Learn the basics of the Thot desktop app by building and analyzing your first project.
++ **[Intermediate](intermediate#readme):** Learn some more advanced features of the desktop app, and start coding your own analysis using
 Thot's API bindings (using the language of your choice).
-+ **[Advanced](advanced):** Learn how to adapt projects on the fly, and organize your data even better. 
-+ **[API](api):** Get a deeper understanding of Thot's philosophy and API, with examples.
++ **[Advanced](advanced#readme):** Learn how to adapt projects on the fly, and organize your data even better. 
++ **[API](api#readme):** Get a deeper understanding of Thot's philosophy and API, with examples.
 
 # Install
 > :clock9: **10 minutes**
@@ -60,7 +60,7 @@ install.packages("path/to/thot_0.10.0-r.tar.gz", repos=NULL, type="source")
 </details>
 
 # Get started
-We suggest you start with **[beginner tutorials](beginner/README.md)** which will get you familiar with the basics of the Thot desktop app.
+We suggest you start with **[beginner tutorials](beginner#readme)** which will get you familiar with the basics of the Thot desktop app.
 
 # Questions
 Feel free to reach out to us on [our Discord](https://discord.gg/Kv2c5XynfV), or send us an email at <info@thot.so>.
