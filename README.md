@@ -5,12 +5,12 @@ These projects are designed to help you learn and explore the features of Thot.
 
 **Each tutorial only takes 15 minutes**, so you can get up and running quickly, and learn in bite sized chunks.
 
-+ **[Install](#install):** Get the Thot desktop app and language bindings installed on your computer.
-+ **[Beginner](beginner#readme):** Learn the basics of the Thot desktop app by building and analyzing your first project.
-+ **[Intermediate](intermediate#readme):** Learn some more advanced features of the desktop app, and start coding your own analysis using
+0. **[Install](#install):** Get the Thot desktop app and language bindings installed on your computer.
+1. **[Beginner](beginner#readme):** Learn the basics of the Thot desktop app by building and analyzing your first project.
+2. **[Intermediate](intermediate#readme):** Learn some more advanced features of the desktop app, and start coding your own analysis using
 Thot's API bindings (using the language of your choice).
-+ **[Advanced](advanced#readme):** Learn how to adapt projects on the fly, and organize your data even better. 
-+ **[API](api#readme):** Get a deeper understanding of Thot's philosophy and API, with examples.
+3. **[Advanced](advanced#readme):** Learn how to adapt projects on the fly, and organize your data even better. 
+4. **[API](api#readme):** Get a deeper understanding of Thot's philosophy and API, with examples.
 
 # Install
 > :clock9: **10 minutes**
