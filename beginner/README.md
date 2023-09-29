@@ -26,3 +26,5 @@ It's finally time to get started using Thot!
 
 **[Puzzle's Fireworks](fireworks):** You've just graduated university and have the amazing opportunity to work for a local fireworks company.
 Your first task is to figure out which of two fireworks recipes is quieter.
+
+**[Start the tutorial](fireworks)**

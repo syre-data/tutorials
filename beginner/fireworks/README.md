@@ -9,12 +9,15 @@ Our deadline is approaching quickly, so we need to put a rush on this project. L
 Good luck!
 
 ## Before we begin
-The analysis scripts used in this project depend on some common libraries. Please ensure they are installed based on your programming language.
+1. Install the [Thot desktop app](../../README.md#desktop-app) and the [language bindings](../../README.md#language-bindings) of your choice.
 
-| Python | R |
-| --- | --- |
-| [Pandas](https://pandas.pydata.org/getting_started.html) | [Tidyverse](https://www.tidyverse.org/) |
-| [Matplotlib](https://matplotlib.org/stable/users/getting_started/) | |
+2. Install the analysis dependencies.
+    > The analysis scripts used in this project depend on some common libraries.
+
+    | Python | R |
+    | --- | --- |
+    | [Pandas](https://pandas.pydata.org/getting_started.html) | [Tidyverse](https://www.tidyverse.org/) |
+    | [Matplotlib](https://matplotlib.org/stable/users/getting_started/) | |
 
 ## Creating your first project
 Let's start up the desktop app. If this is your first time running it, you'll first have to create a user account. Enter your email and click the **Get started!** button. This will take you to your dashboard.
@@ -128,6 +131,9 @@ Let's take a brief moment to check that we've assigned the `type`s of the Contai
 Wonderful! We've now created our project structure and added our data. Next we'll look at how to analyze the data using Thot Scripts.
 
 ## Analyzing the data
+> **Warning**
+> Did you [install your language bindings](../../README.md#language-bindings)?
+
 Analysis of a Thot project starts at the bottom most level of the project tree and works its way up. Each **Script** can be thought of as a machine that takes Assets in and produces new Assets. The new Assets can then be consumed by other Scripts. Our analysis scripts have already been implemented, so all we need to do is assign them to the correct Containers.
 
 > **Download the analysis scripts**

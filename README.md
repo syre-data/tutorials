@@ -14,6 +14,8 @@ Thot's API bindings (using the language of your choice).
 # Install
 > :clock9: **10 minutes**
 
+Before you begin the tutorials make sure to download both the Thot desktop application **and** the language bindings of your choice.
+
 ## Desktop app
 Your first step in getting started is to install the Thot desktop app.
 Installing the app should be the same as installing any other application for your OS. 
