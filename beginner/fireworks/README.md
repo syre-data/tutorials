@@ -245,4 +245,4 @@ The R+D team have just created a new recipe! We'll need to add it to our current
 
 If you're ready for your next challenge head to the [intermediate tutorial](/intermediate), or play around with the current project yourself.
 
-**[>> Next tutorial >>](/intermediate)**
+**[>> Next tutorial >>](/intermediate/README.md)**

@@ -60,7 +60,7 @@ install.packages("path/to/thot_0.10.0-r.tar.gz", repos=NULL, type="source")
 </details>
 
 # Get started
-We suggest you start with [beginner tutorials](beginner) which will get you familiar with the basics of the Thot desktop app.
+We suggest you start with **[beginner tutorials](beginner/README.md)** which will get you familiar with the basics of the Thot desktop app.
 
 # Questions
 Feel free to reach out to us on [our Discord](https://discord.gg/Kv2c5XynfV), or send us an email at <info@thot.so>.
