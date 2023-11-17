@@ -8,7 +8,7 @@ Our deadline is approaching quickly, so we need to put a rush on this project. L
 
 Good luck!
 
-## Before we begin
+## 0. Before we begin
 1. Install the [Thot desktop app](../../README.md#desktop-app) and the [language bindings](../../README.md#language-bindings) of your choice.
 
 2. Install the analysis dependencies.
@@ -19,19 +19,22 @@ Good luck!
     | [Pandas](https://pandas.pydata.org/getting_started.html) | [Tidyverse](https://www.tidyverse.org/) |
     | [Matplotlib](https://matplotlib.org/stable/users/getting_started/) | |
 
-## Creating your first project
-Let's start up the desktop app. If this is your first time running it, you'll first have to create a user account. Enter your email and click the **Get started!** button. This will take you to your dashboard.
+## 1. Creating your first project
+1. Start the desktop app. 
+
+    > If this is your first time running it, you'll first have to create a user account. Enter your email and click the **Get started!** button. This will take you to your dashboard.
 
 ![Thot desktop start screen](images/desktop_startup.png)
 
-If you don't have any projects created yet, click on the **Create your first project** button (otherwise click on the **New** button). You'll be asked to select the folder to place the project in. Let's call this one `silent_fireworks`. Each Thot project is contained in its own folder where all the resources for that project are organized.
+2. Create your first project.
+    > If you don't have any projects created yet, click on the **Create your first project** button (otherwise click on the **New** button). You'll be asked to select the folder to place the project in. Let's call this one `silent_fireworks`. Each Thot project is contained in its own folder where all the resources for that project are organized.
 
-> **Note**
-> On Mac you must create your project folder from Finder before selecting it as the project folder.
+    > **Note**
+    > On Mac you must create your project folder from Finder before selecting it as the project folder.
 
 Once you create the project, you will be taken to the project canvas.
 
-## Structuring your project
+## 2. Structuring your project
 The first thing we need to do is build our project structure. Thot uses a tree to organize your projects, giving your project different levels. The top level should be the most important grouping to you, becoming less important as you move down the tree.
 
 For this project the most important thing we need to test is which recipe is quieter, so our top level grouping will be the recipes. Unfortunately, testing underwater fireworks happens to be quite expensive, so we will only be able to make two batches for each recipe. The batches will be our second level. This gives us the tree below.
@@ -43,94 +46,124 @@ Our researchers have already recorded the data and written the analysis scripts 
 Because of our short time frame to get this done, we'll build this project quick and dirty, using the most common features of Thot's dersktop app.
 
 ### Setting up your project tree
-Let's start by annotating the root **Container** by clicking on it. This will open the properties widget. Enter the following information (leaving the rest blank).
+1. Click on the root **Container** to open the properties widget.
 
-|     |     |
-| --- | --- |
-| **Name:** | Silent Fireworks |
-| **Type:** | project
-| **Description:** | Determining whether recipe A or B is quieter. |
+    Enter the following information (leaving the rest blank).
+
+    |     |     |
+    | --- | --- |
+    | **Name:** | Silent Fireworks |
+    | **Type:** | project
+    | **Description:** | Determining whether recipe A or B is quieter. |
+
+        
+    > **Important**
+    > Properties are case-sensitive.
 
 ![Setting the root Container's properties.](images/root_container_properties.png)
 
-> **Note**
-> Properties are case-sensitive.
-
-Great! We just edited our first Container. What do Containers do? Well, they contain things. Namely, they can contain other Containers, Assets, and Script Associations. We'll get to the Assets and Script Associations later on.
+> Great! We just edited our first Container. What do Containers do? Well, they contain things. Namely, they can contain other Containers, Assets, and Script Associations. We'll get to the Assets and Script Associations later on.
 
 #### Adding a child
-Let's add our first child Container for Recipe A. You probably noticed the plus icon that appears when you hovered over the root Container. Go ahead and give it a click. This will open the **Add child** dialog. Let's name the child Container **Recipe A**. After creating it, give it a `type` of **recipe**.
+2. Hover over the root Container and click on the **+** button.
+    
+    Name the child Container **Recipe A**. 
+3. Label it.
+    > Open the properties editor by clicking on the Recipe A Container and assign the values below.
 
-|     |     |
-| --- | --- |
-| **Name:** | Recipe A |
-| **Type:** | recipe |
+    |     |     |
+    | --- | --- |
+    | **Name:** | Recipe A |
+    | **Type:** | recipe |
 
 #### Metadata
 We'll also add metadata to this Container. This allows us to attach metadata to our data. Child Containers inherit the metadata from their ancestors, but can overwrite it by declaring a new value with the same name.
 
-To add metadata click on the **+** icon in the **Metadata** section and enter the following metadata:
+4. Click on the **+** icon in the **Metadata** section.
+    
+    Enter the following metadata:
 
-| Name | Type | Value
-| --- | --- | ---
-| recipe | string | A
+    | Name | Type | Value
+    | --- | --- | ---
+    | recipe | string | A
 
 ![Recipe A Container final properties](images/recipe_a_properties.png)
 
-On to the batches. Create a child Container of `Recipe A` with the following information:
+5. Create a child Container of `Recipe A`.
 
-|     |     |
-| --- | --- |
-| **Name:** | Batch 1 |
-| **Type:** | batch |
-| **Metadata:** | batch (number): 1 |
+    Give it following information:
+    |     |     |
+    | --- | --- |
+    | **Name:** | Batch 1 |
+    | **Type:** | batch |
+    | **Metadata:** | batch (number): 1 |
 
-The notation for the metadata is of the form `Name (Type): Value`.
+    > **Note**
+    > Metadata is written as `Name (Type): Value`.
 
-Repeat this for Batch 2.
-
-|     |     |
-| --- | --- |
-| **Name:** | Batch 2 |
-| **Type:** | batch |
-| **Metadata:** | batch (number): 2 |
+6. Repeat this for Batch 2.
+    |     |     |
+    | --- | --- |
+    | **Name:** | Batch 2 |
+    | **Type:** | batch |
+    | **Metadata:** | batch (number): 2 |
 
 Great! We've now created our `Recipe A` branch.
 
 #### Duplicating subtrees
 `Recipe B` will have the exact same structure with only the name of the recipe Container changed. Let's save ourselves some work by duplicating the `Recipe A` tree and changing the required information.
 
-Hover over the kebab (three dot) menu in the upper right corner of the `Recipe A` Container and select `Duplicate tree`.
+7. Hover over the kebab (three dot) menu in the upper right corner of the `Recipe A` Container and select `Duplicate tree`.
 
 ![Duplicating a tree](images/duplicate_tree.png)
 
-Click on the newly created `Recipe A (Copy)` Container to open its properties widget and change its name to `Recipe B` and its `recipe` metadata to `B`.
+8. Update the duplicated tree's properties.
+    |     |     |
+    | --- | --- |
+    | **Name:** | Recipe B |
+    | **Metadata:** | recipe (string): B |
 
 Great! Our project's structure is now complete, and we can start adding data to it.
 
-## Adding data to your project
+## 3. Adding data to your project
 Now that we have our tree, we can add data. Most often data is added to the lowest level Containers because these are the individual/samples/spicimens we actually run experiments on.
 In Thot, any data file -- CSV, text, images, binary, anything -- is called an **Asset**.
 
 > [Download the data](https://resources.thot.so/downloads/tutorials/beginner/fireworks/project_resources/data.zip)
 
-Adding data to a Container is as simple as Drag-and-dropping the file on it. For each of the batches, add the respective data. (e.g. Drop `a1-data.csv` on the `Recipe A > Batch 1` Container.) You'll see the Assets appear in the preview as you add them.
+Adding data to a Container is as simple as drag-and-dropping the file on it. You'll then see it appear.
+
+1. Add each data file to its batch.
+
+    (e.g. Drag-drop `a1-data.csv` on the `Recipe A > Batch 1` Container.) 
 
 ### Bulk editing
-Let's edit the names of Assets to make them more descriptive. First, click off any of the resources to de-select everything, then <kbd>Shift</kbd> + click on each of the newly add files. This opens the `Bulk Editing` widget (it looks almost the same as the normal properties widget). Using this same technique you can select multiple Containers as well, or a mix of Containers and Assets.
+2. De-select everything
+3. <kbd>Shift</kbd> + click on each of the data files. 
 
+    > This opens the `Bulk Editing` widget (it looks almost the same as the normal properties widget). Using this same technique you can select multiple Containers as well, or a mix of Containers and Assets.
+
+4. Set the properties.
+    |     |     |
+    | --- | --- |
+    | **Name:** | Noise Data |
+    | **Type:** | noise-data |
+
+    
 ![Bulk edit menu](images/bulk_edit.png)
 
-Set the `name` of the Assets to `Noise Data` and their `type` to `noise-data`.
+## 4. Preview
+Let's take a brief moment to check that we've assigned the `type`s of the Containers correctly. 
 
-## Preview
-Let's take a brief moment to check that we've assigned the `type`s of the Containers correctly. Change the **Preview** in the upper left of the canvas to `Type`.
+1. Change the **Preview** to `Type`.
+
+    This is the drop down in the upper left of the canvas. 
 
 ![Preview menu](images/preview_menu.png)
 
 Wonderful! We've now created our project structure and added our data. Next we'll look at how to analyze the data using Thot Scripts.
 
-## Analyzing the data
+## 5. Analyzing the data
 > **Warning**
 > Did you [install your language bindings](../../README.md#language-bindings)?
 
@@ -146,13 +179,32 @@ Analysis of a Thot project starts at the bottom most level of the project tree a
 
 Associating scripts happens in two steps. First, we'll add the analysis scripts to the project, then we'll associate them to the correct Containers.
 
-Unselect all the **Resources** (Containers and Assets) by clicking an empty spot in the canvas. In the details bar click the **Add scripts** button, and select the three analysis scripts for the project.
+1. Add the Scripts to the Project.
+    1. Unselect all the **Resources** (Containers and Assets).
 
-Select all the `Batch` Containers and associate the `noise_stats` script to them by clicking the **+** icon in the **Scripts** section of the properties widget. Similarly, add the `recipe_stats` script to both `Recipe` Containers, and the `recipe_comparison` script to the root Container. Change the preview to `Scripts` to verify everything is correct.
+        You can do this by clicking an empty spot in the canvas. 
+
+    2. Click the **Add scripts** button.
+
+        This is found in the upper-right of the canvas.
+
+    3. Add the three analysis scripts to the project.
+
+2. Associate the Script to Containers.
+    1. Select all the `Batch` Containers.
+    2. Associate the `noise_stats` script to them.
+        Click the **+** icon in the **Scripts** section of the properties widget. 
+    3. Associate the `recipe_stats` script to both `Recipe` Containers
+    4. Associate the `recipe_comparison` script to the root Container.
+
+3. Change the preview to `Scripts` to verify everything is correct.
 
 ![Script associations](images/script_associations.png)
 
-We're almost there now! Let's change our preview back to `Data` and click the `Analyze` button to run our analysis.
+We're almost there now!
+
+4. Change the preview back to `Data`.
+5. Click the `Analyze` button to run our analysis.
 
 > **Warning**
 > Running the analysis may give you an error. If this occurs, an error with a detailed error message will appear. A common error is that the interpreter path is not available. If you have some programming experience, you can specify the path to use by opening the **Developer settings** from the **Thot** menu, then modifying `runner_settings.json`.
@@ -166,16 +218,22 @@ We're almost there now! Let's change our preview back to `Data` and click the `A
 >
 > If you need any help, never hesitate to send us a message on [Discord](https://discord.gg/Kv2c5XynfV) or at <info@thot.so>.
 
-Once the analysis is complete you'll see the newly created Assets appear in the project tree. Which recipe is quieter? Open the `Recipe Comparison` Assets in the `Silent Fireworks` Container to find out. (No, you're not seeing double, there are two of them. One is a CSV file and the other is a plot.) To preview an Asset you can double click on it.
+Once the analysis is complete you'll see the newly created Assets appear in the project tree. Which recipe is quieter?
+
+6. Double click either of the `Recipe Comparison` Assets in the `Silent Fireworks` Container. 
+
+    (No, you're not seeing double, there are two of them. One is a CSV file and the other is a plot.)
 
 ![Final project](images/final_project.png)
 
-## Sharing results
+## 6. Sharing results
 You did it! Mr. Puzzle will be extatic to know which recipe to use for the fishs' fireworks, and just in time, too!
 
 Unfortunately, Mr. Puzzle is a bit of an old timer, and hasn't yet adopted Thot himself yet (we hope you can convince him to try it out, though). Luckily for us, everything in Thot is just files and folders, so sharing the results with him is super simple.
 
-Open the root Container's kebab (three dot) menu and click the **Open folder** action. This will open the data folder of the project, so you can easily send Mr. Puzzle the final plot, justifying your conclusion.
+1. Open the root Container's kebab (three dot) menu and click the **Open folder** action. 
+
+    This will open the data folder of the project, so you can easily send Mr. Puzzle the final plot, justifying your conclusion.
 
 > **Download the final project**
 >
@@ -185,4 +243,6 @@ Open the root Container's kebab (three dot) menu and click the **Open folder** a
 ## What next?
 The R+D team have just created a new recipe! We'll need to add it to our current project so we can compare it with the current results, and also create our own analysis script.
 
-If you're ready for your next challenge, get started with the [intermediate tutorials](/intermediate), or play around with the current project yourself.
+If you're ready for your next challenge head to the [intermediate tutorial](/intermediate#readme), or play around with the current project yourself.
+
+**[>> Next tutorial >>](/intermediate#readme)**
