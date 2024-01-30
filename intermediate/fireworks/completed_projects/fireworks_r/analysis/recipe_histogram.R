@@ -1,9 +1,9 @@
 # import libraries
 suppressPackageStartupMessages(library(tidyverse))
 library(ggplot2)
-library(thot)
+library(syre)
 
-# initialize thot database
+# initialize syre database
 db <-
   database(dev_root = "/absolute/path/to/silent_fireworks/data/Recipe A")
 

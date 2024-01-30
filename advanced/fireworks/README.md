@@ -40,10 +40,10 @@ Create a new project script called `clean_noise_data` with the contents below, a
 ```python
 # import libraries
 import pandas as pd
-import thot
+import syre
 
-# initialize thot database
-db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe C/Batch 2")
+# initialize syre database
+db = syre.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe C/Batch 2")
 
 # get data
 noise_data = db.find_asset(type="raw-data")
@@ -69,11 +69,10 @@ clean_df.to_csv(data_path)
 ```R
 # import libraries
 suppressPackageStartupMessages(library(tidyverse))
-library(thot)
+library(syre)
 
-# initialize thot database
-#db <- database(dev_root = "/absolute/path/to/silent_fireworks/data/Recipe C/Batch 2")
-db <- database(dev_root = "C:\\Users\\carls\\Downloads\\thot_tutorials\\adv_fireworks_r\\data\\Recipe A-1-1\\Batch 2")
+# initialize syre database
+db <- database(dev_root = "/absolute/path/to/silent_fireworks/data/Recipe C/Batch 2")
 
 # get data
 noise_data <- db |> find_asset(type = "raw-data")
@@ -99,7 +98,7 @@ clean_df |> write.csv(data_path, row.names = FALSE)
 ```
 </details>
 
-But how do we tell Thot that the `noise_stats` Script needs to run after the `clean_noise_data` Script?
+But how do we tell Syre that the `noise_stats` Script needs to run after the `clean_noise_data` Script?
 
 ### Analysis dependencies
 We can stack our analysis scripts like legos by using the **order** parameter. Within a Container, Scripts run from lowest order to highest (e.g. 0 then 1 then 2). Scripts with the same order run in parallel, and all scripts with a certain order will complete before moving to the next.
@@ -110,7 +109,7 @@ Set the `noise_stats` Script's order to **1**, leaving the `clean_noise_data` or
 
 This allows us to keep our Scripts small and reuse them across projects.
 
-Before we analyze the project, we can save ourselves some time by telling Thot not to run analyses we know haven't changed.
+Before we analyze the project, we can save ourselves some time by telling Syre not to run analyses we know haven't changed.
 Select all the Recipe A and Recipe B Containers -- the Recipe and Batch Containers -- and uncheck the **autorun** boxes in the Scripts section.
 You can see which Scripts will run on the Containers by setting the preview to **Scripts** and checking the star icon.
 
@@ -131,10 +130,10 @@ Create a new script called `adv_recipe_stats` and add it to your project with th
 import numpy as np
 import pandas as pd
 from scipy.stats import norm
-import thot
+import syre
 
-# initialize thot database
-db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
+# initialize syre database
+db = syre.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
 
 # get data
 noise_data = db.find_assets(type="noise-data")
@@ -193,9 +192,9 @@ skew_df.to_csv(skew_path)
 suppressPackageStartupMessages(library(tidyverse))
 library(moments)
 library(ggplot2)
-library(thot)
+library(syre)
 
-# initialize thot database
+# initialize syre database
 db <-
   database(dev_root = "/absolute/path/to/silent_fireworks/data/Recipe A")
 
@@ -288,6 +287,6 @@ What do you think we shall tell Mr. Puzzle's? If you need more info on which is 
 > + [R](https://resources.thot.so/downloads/tutorials/advanced/fireworks/completed_projects/fireworks_r.zip)
 
 # Congratulations!
-You've made it through all the tuorials! Now it's time to start using Thot on your own projects.
+You've made it through all the tuorials! Now it's time to start using Syre on your own projects.
 
-Remember, if you ever have questions you can chat with us on [our Discord](https://discord.gg/Kv2c5XynfV) or send us an email at <info@thot.so>.
+Remember, if you ever have questions you can chat with us on [our Discord](https://discord.gg/Kv2c5XynfV) or send us an email at <info@syre.ai>.

@@ -1,9 +1,9 @@
 # import libraries
 import pandas as pd
-import thot
+import syre
 
-# initialize thot database
-db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
+# initialize syre database
+db = syre.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
 
 # find all data with type `noise-data` in the subtree
 noise_data = db.find_assets(type="noise-data")

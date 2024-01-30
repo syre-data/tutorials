@@ -1,8 +1,8 @@
 suppressPackageStartupMessages(library(tidyverse))
 library(ggplot2)
-library(thot)
+library(syre)
 
-# initialize thot project
+# initialize syre project
 db <- database()
 
 # get `recipe-stats` data

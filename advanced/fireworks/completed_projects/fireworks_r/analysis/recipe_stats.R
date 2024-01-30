@@ -1,7 +1,7 @@
 suppressPackageStartupMessages(library(tidyverse))
-library(thot)
+library(syre)
 
-# initialize thot project
+# initialize syre project
 db <- database()
 
 # get recipe name

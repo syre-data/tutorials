@@ -1,7 +1,7 @@
 # Advanced tutorials
 **Each tutorial is ~ 15 minutes.**
 
-In these tutorials you'll learn some more advanced functions of the Desktop app, and dig into Thot's API so you can start to adapt and create your own Thot scripts.
+In these tutorials you'll learn some more advanced functions of the Desktop app, and dig into Syre's API so you can start to adapt and create your own Syre scripts.
 
 ## Concepts covered
 + Ideas

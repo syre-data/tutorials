@@ -9,7 +9,7 @@ Our deadline is approaching quickly, so we need to put a rush on this project. L
 Good luck!
 
 ## 0. Before we begin
-1. Install the [Thot desktop app](../../README.md#desktop-app) and the [language bindings](../../README.md#language-bindings) of your choice.
+1. Install the [Syre desktop app](../../README.md#desktop-app) and the [language bindings](../../README.md#language-bindings) of your choice.
 
 2. Install the analysis dependencies.
     > The analysis scripts used in this project depend on some common libraries.
@@ -24,10 +24,10 @@ Good luck!
 
     > If this is your first time running it, you'll first have to create a user account. Enter your email and click the **Get started!** button. This will take you to your dashboard.
 
-![Thot desktop start screen](images/desktop_startup.png)
+![Syre desktop start screen](images/desktop_startup.png)
 
 2. Create your first project.
-    > If you don't have any projects created yet, click on the **Create your first project** button (otherwise click on the **New** button). You'll be asked to select the folder to place the project in. Let's call this one `silent_fireworks`. Each Thot project is contained in its own folder where all the resources for that project are organized.
+    > If you don't have any projects created yet, click on the **Create your first project** button (otherwise click on the **New** button). You'll be asked to select the folder to place the project in. Let's call this one `silent_fireworks`. Each Syre project is contained in its own folder where all the resources for that project are organized.
 
     > **Note**
     > On Mac you must create your project folder from Finder before selecting it as the project folder.
@@ -35,15 +35,15 @@ Good luck!
 Once you create the project, you will be taken to the project canvas.
 
 ## 2. Structuring your project
-The first thing we need to do is build our project structure. Thot uses a tree to organize your projects, giving your project different levels. The top level should be the most important grouping to you, becoming less important as you move down the tree.
+The first thing we need to do is build our project structure. Syre uses a tree to organize your projects, giving your project different levels. The top level should be the most important grouping to you, becoming less important as you move down the tree.
 
 For this project the most important thing we need to test is which recipe is quieter, so our top level grouping will be the recipes. Unfortunately, testing underwater fireworks happens to be quite expensive, so we will only be able to make two batches for each recipe. The batches will be our second level. This gives us the tree below.
 
 ![Project tree for the silent fireworks test.](images/fireworks_tree.png)
 
-Our researchers have already recorded the data and written the analysis scripts for us, so all we need to do is create a Thot project for our experiments and run the analysis.
+Our researchers have already recorded the data and written the analysis scripts for us, so all we need to do is create a Syre project for our experiments and run the analysis.
 
-Because of our short time frame to get this done, we'll build this project quick and dirty, using the most common features of Thot's dersktop app.
+Because of our short time frame to get this done, we'll build this project quick and dirty, using the most common features of Syre's dersktop app.
 
 ### Setting up your project tree
 1. Click on the root **Container** to open the properties widget.
@@ -127,7 +127,7 @@ Great! Our project's structure is now complete, and we can start adding data to 
 
 ## 3. Adding data to your project
 Now that we have our tree, we can add data. Most often data is added to the lowest level Containers because these are the individual/samples/spicimens we actually run experiments on.
-In Thot, any data file -- CSV, text, images, binary, anything -- is called an **Asset**.
+In Syre, any data file -- CSV, text, images, binary, anything -- is called an **Asset**.
 
 > [Download the data](https://resources.thot.so/downloads/tutorials/beginner/fireworks/project_resources/data.zip)
 
@@ -161,13 +161,13 @@ Let's take a brief moment to check that we've assigned the `type`s of the Contai
 
 ![Preview menu](images/preview_menu.png)
 
-Wonderful! We've now created our project structure and added our data. Next we'll look at how to analyze the data using Thot Scripts.
+Wonderful! We've now created our project structure and added our data. Next we'll look at how to analyze the data using Syre Scripts.
 
 ## 5. Analyzing the data
 > **Warning**
 > Did you [install your language bindings](../../README.md#language-bindings)?
 
-Analysis of a Thot project starts at the bottom most level of the project tree and works its way up. Each **Script** can be thought of as a machine that takes Assets in and produces new Assets. The new Assets can then be consumed by other Scripts. Our analysis scripts have already been implemented, so all we need to do is assign them to the correct Containers.
+Analysis of a Syre project starts at the bottom most level of the project tree and works its way up. Each **Script** can be thought of as a machine that takes Assets in and produces new Assets. The new Assets can then be consumed by other Scripts. Our analysis scripts have already been implemented, so all we need to do is assign them to the correct Containers.
 
 > **Download the analysis scripts**
 >
@@ -175,7 +175,7 @@ Analysis of a Thot project starts at the bottom most level of the project tree a
 > + [R](https://resources.thot.so/downloads/tutorials/beginner/fireworks/project_resources/r_analysis.zip)
 
 > **Note**
-> Thot exposes a simple interface that wraps around the actual analysis that you do in your scripts. We cover this in the [intermediate tutorials](/intermediate), but encourage you to open the provided analysis files and take a look for yourself. The longest is 20 lines of code with comments explaining each line.
+> Syre exposes a simple interface that wraps around the actual analysis that you do in your scripts. We cover this in the [intermediate tutorials](/intermediate), but encourage you to open the provided analysis files and take a look for yourself. The longest is 20 lines of code with comments explaining each line.
 
 Associating scripts happens in two steps. First, we'll add the analysis scripts to the project, then we'll associate them to the correct Containers.
 
@@ -207,7 +207,7 @@ We're almost there now!
 5. Click the `Analyze` button to run our analysis.
 
 > **Warning**
-> Running the analysis may give you an error. If this occurs, an error with a detailed error message will appear. A common error is that the interpreter path is not available. If you have some programming experience, you can specify the path to use by opening the **Developer settings** from the **Thot** menu, then modifying `runner_settings.json`.
+> Running the analysis may give you an error. If this occurs, an error with a detailed error message will appear. A common error is that the interpreter path is not available. If you have some programming experience, you can specify the path to use by opening the **Developer settings** from the **Syre** menu, then modifying `runner_settings.json`.
 >
 > ```json
 > {
@@ -216,7 +216,7 @@ We're almost there now!
 > }
 > ```
 >
-> If you need any help, never hesitate to send us a message on [Discord](https://discord.gg/Kv2c5XynfV) or at <info@thot.so>.
+> If you need any help, never hesitate to send us a message on [Discord](https://discord.gg/Kv2c5XynfV) or at <info@syre.ai>.
 
 Once the analysis is complete you'll see the newly created Assets appear in the project tree. Which recipe is quieter?
 
@@ -229,7 +229,7 @@ Once the analysis is complete you'll see the newly created Assets appear in the 
 ## 6. Sharing results
 You did it! Mr. Puzzle will be extatic to know which recipe to use for the fishs' fireworks, and just in time, too!
 
-Unfortunately, Mr. Puzzle is a bit of an old timer, and hasn't yet adopted Thot himself yet (we hope you can convince him to try it out, though). Luckily for us, everything in Thot is just files and folders, so sharing the results with him is super simple.
+Unfortunately, Mr. Puzzle is a bit of an old timer, and hasn't yet adopted Syre himself yet (we hope you can convince him to try it out, though). Luckily for us, everything in Syre is just files and folders, so sharing the results with him is super simple.
 
 1. Open the root Container's kebab (three dot) menu and click the **Open folder** action. 
 

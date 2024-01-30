@@ -1,9 +1,9 @@
 # import packages
 import pandas as pd
-import thot
+import syre
 
-# initialize thot project
-db = thot.Database()
+# initialize syre project
+db = syre.Database()
 
 # get noise data from asset
 noise_data = db.find_asset(type='noise-data')

@@ -1,9 +1,9 @@
 # import packages
 import pandas as pd
-import thot
+import syre
 
-# intialize thot
-db = thot.Database()
+# initialize syre
+db = syre.Database()
 
 # get recipe data
 recipe_stats = db.find_assets(type='recipe-stats')

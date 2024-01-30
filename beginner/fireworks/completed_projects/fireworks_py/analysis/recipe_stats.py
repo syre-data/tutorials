@@ -1,9 +1,9 @@
 # include packages
 import pandas as pd
-import thot
+import syre
 
-# initialize thot
-db = thot.Database()
+# initialize syre
+db = syre.Database()
 
 # get recipe container
 recipe = db.root

@@ -1,10 +1,9 @@
 # import libraries
 suppressPackageStartupMessages(library(tidyverse))
-library(thot)
+library(syre)
 
-# initialize thot database
-#db <- database(dev_root = "/absolute/path/to/silent_fireworks/data/Recipe C/Batch 2")
-db <- database(dev_root = "C:\\Users\\carls\\Downloads\\thot_tutorials\\adv_fireworks_r\\data\\Recipe A-1-1\\Batch 2")
+# initialize syre database
+db <- database(dev_root = "/absolute/path/to/silent_fireworks/data/Recipe C/Batch 2")
 
 # get data
 noise_data <- db |> find_asset(type = "raw-data")

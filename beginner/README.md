@@ -1,7 +1,7 @@
 # Beginner tutorials
 **Each tutorial is ~ 15 minutes.**
 
-This is your place to get started using Thot. In these tutorials you'll learn the basic ideas behind Thot, and how to use the most common functionality.
+This is your place to get started using Syre. In these tutorials you'll learn the basic ideas behind Syre, and how to use the most common functionality.
 
 ## Concepts covered
 + Terminology
@@ -19,10 +19,10 @@ This is your place to get started using Thot. In these tutorials you'll learn th
     - [Analyze a project](fireworks/README.md#analyzing-the-data)
 
 ## Prerequisites
-Before you begin, make sure you've [installed](/README.md#Install) the Thot desktop app and the language bindings of your choice.
+Before you begin, make sure you've [installed](/README.md#Install) the Syre desktop app and the language bindings of your choice.
 
 ## Get started
-It's finally time to get started using Thot!
+It's finally time to get started using Syre!
 
 **Puzzle's Fireworks:** You've just graduated university and have the amazing opportunity to work for a local fireworks company.
 Your first task is to figure out which of two fireworks recipes is quieter.

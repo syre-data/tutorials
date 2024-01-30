@@ -2,10 +2,10 @@
 import numpy as np
 import pandas as pd
 from scipy.stats import norm
-import thot
+import syre
 
-# initialize thot database
-db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
+# initialize syre database
+db = syre.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
 
 # get data
 noise_data = db.find_assets(type="noise-data")

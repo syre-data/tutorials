@@ -2,7 +2,7 @@
 > :clock9: **15 minutes**
 
 ## Where did we leave off?
-Ahh, right. You had just saved the company by determining which of the two firework recipes was quieter. You created your first Thot project by creating the project structure, organizing and annotating the raw data, and analyzing that data to quickly get the results you needed.
+Ahh, right. You had just saved the company by determining which of the two firework recipes was quieter. You created your first Syre project by creating the project structure, organizing and annotating the raw data, and analyzing that data to quickly get the results you needed.
 
 The aquarium's New Year's Eve extravaganza went off without a hitch, and both the people and fish loved the show. In the crowd was Famous Dave, from Famous Dave's Scuba Encounters. He was so impressed he wants to put on his own show for his clients, and has asked the Puzzle's team to make it happen!
 
@@ -23,7 +23,7 @@ The brilliant chemists in Puzzle's R&D department have just sent you a message
 Of course you can!
 
 ## Extending a project
-As is typical in science, we always finish projects with more questions than we began, and need to be flexible to new requirements as we progress through our projects. We need an easy way to account for this, and with Thot, we have one.
+As is typical in science, we always finish projects with more questions than we began, and need to be flexible to new requirements as we progress through our projects. We need an easy way to account for this, and with Syre, we have one.
 
 ### New data
 Let's extend our project to account for this new recipe. [Duplicate](/beginner/fireworks#duplicating-subtrees) one of the other Recipe branches, and update the `Name` to **Recipe C** and the `recipe` metadata value to **C**.
@@ -50,7 +50,7 @@ Create a file called <code>recipe_histogram.R</code>, and add it to the project.
 > Adding a script to a project copies it into the project's `analysis` folder, so be sure you are editing the correct file.
 
 #### Interacting with our project
-Thot allows us to interact with our project from our scripts. This way we can check our results without having to analyze the project every time we make a change.
+Syre allows us to interact with our project from our scripts. This way we can check our results without having to analyze the project every time we make a change.
 
 Lets start by initializing the database for the script on our Recipe A Container.
 Add the following lines to your new analysis script.
@@ -60,10 +60,10 @@ Add the following lines to your new analysis script.
 ```python
 # import libraries
 import pandas as pd
-import thot
+import syre
 
-# initialize thot database
-db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
+# initialize syre database
+db = syre.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
 ```
 </details>
 <details>
@@ -73,9 +73,9 @@ db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
 # import libraries
 suppressPackageStartupMessages(library(tidyverse))
 library(ggplot2)
-library(thot)
+library(syre)
 
-# initialize thot database
+# initialize syre database
 db <- database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe A")
 ```
 </details>
@@ -106,7 +106,7 @@ You should see "Recipe A" printed out.
 > Documentation should also be available using your editors hints.
 
 #### Finding Assets
-The first thing we want to do is get the actual data we will operate on. To do this Thot has two API calls:
+The first thing we want to do is get the actual data we will operate on. To do this Syre has two API calls:
 + **`find_asset`:** Finds a single Asset matching the provided filter, returning the `None` type for the language if no matches are found. If multiple matches are found, a random one is returned.
 + **`find_assets`:** Finds multiple Assets matching the filter as a `list` in the given language.
 
@@ -131,7 +131,7 @@ noise_data <- db |> find_assets(type="noise-data")
 The `noise_data` variable should now hold a list with two elements. But why only two? We have six Assets with the `type` **noise-data** -- one in each batch.
 
 When running a script, it only has access to the Container it's running on and everything below it. It can't access anything above it or on the same level.
-(In fancy talk, a Thot project acts as a [**hierarchical database**](/api#hierarchical-database). This is what allows us to duplicate tree structures without needing to re-program anything.
+(In fancy talk, a Syre project acts as a [**hierarchical database**](/api#hierarchical-database). This is what allows us to duplicate tree structures without needing to re-program anything.
 Because we set the `dev_root` of the database to Recipe A, the `noise_data` variable only contains the noise data from the Recipe A batches. 
 
 Let's verify this.
@@ -188,9 +188,9 @@ Woah! Our noise data has metadata attached to it even though we didn't assign an
 #### Using data
 Now that we know we're operating on the correct data, let's actually plot it.
 <details>
-<summary>Thot's API sandwich</summary>
+<summary>Syre's API sandwich</summary>
 
-Thot uses a "sandwich" model for its API, where Thot is the bread. Below you'll see how you start by using Thot to get the data you need from your project. You then do whatever analysis you want (the meat). Finally, you save any new data back into your project.
+Syre uses a "sandwich" model for its API, where Syre is the bread. Below you'll see how you start by using Syre to get the data you need from your project. You then do whatever analysis you want (the meat). Finally, you save any new data back into your project.
 
 [Learn more](/api#sandwich-model)
 </details>
@@ -238,7 +238,7 @@ There are two important things that we learned here:
 1. Assets have a `file` property that stores the absolute path to the associated data file.
 2. Metadata we assigned in the desktop app is accessible in our analysis scripts.
 
-These two ideas are what give Thot so much power, so it's worth thinking about how you can use them in your own projects for a minute.
+These two ideas are what give Syre so much power, so it's worth thinking about how you can use them in your own projects for a minute.
 
 Time to see what this data looks like.
 In the `recipe_histogram` script add the following

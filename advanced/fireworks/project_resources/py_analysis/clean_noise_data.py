@@ -1,9 +1,9 @@
 # import libraries
 import pandas as pd
-import thot
+import syre
 
-# initialize thot database
-db = thot.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe C/Batch 2")
+# initialize syre database
+db = syre.Database(dev_root="/absolute/path/to/silent_fireworks/data/Recipe C/Batch 2")
 
 # get data
 noise_data = db.find_asset(type="raw-data")
